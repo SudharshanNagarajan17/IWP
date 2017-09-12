@@ -22,8 +22,7 @@ td{
 tr{
 	border-bottom: 1px solid black;
 }
-tr:nth-child(even)
-{
+tr:nth-child(even){
 	background-color:#e0e0d1;
 }
 </style>
