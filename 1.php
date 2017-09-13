@@ -17,7 +17,7 @@ include 'link.php';
 
 $conn=openCon();
 
-$a = "SELECT * FROM lab,incharge WHERE (incharge.block=lab.block and incharge.cno=lab.cno)";
+$a = "SELECT * FROM lab,incharge WHERE (incharge.block=lab.block and incharge.cno=lab.cno) ORDER BY incharge.block,incharge.cno";
 
 $result=mysqli_query($conn,$a);
 
