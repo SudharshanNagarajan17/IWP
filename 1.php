@@ -41,10 +41,10 @@ while($row=mysqli_fetch_array($result))
 	$f1=$row['inc_name'];
 	$f2=$row['inc_no'];
 	$f3=$row['inc_mail'];
-	$i1=$row['as_name'];
-	$i2=$row['as_no'];
-	$i3=$row['as_mail'];
-	echo "<td><div><a onmouseover='facdet()'>".$row['inc_name']."</a></td><td><a onmouseover='incdet()'>".$row['as_name']."</a></div></td></tr></table>";
+	$i1=$row['ast_name'];
+	$i2=$row['ast_no'];
+	$i3=$row['ast_mail'];
+	echo "<td><div><a onmouseover='facdet()'>".$row['inc_name']."</a></td><td><a onmouseover='incdet()'>".$row['ast_name']."</a></div></td></tr></table>";
 }
 
 closeCon($conn);
