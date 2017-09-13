@@ -44,8 +44,9 @@ while($row=mysqli_fetch_array($result))
 	$i1=$row['ast_name'];
 	$i2=$row['ast_no'];
 	$i3=$row['ast_mail'];
-	echo "<td><div><a onmouseover='facdet()'>".$row['inc_name']."</a></td><td><a onmouseover='incdet()'>".$row['ast_name']."</a></div></td></tr></table>";
+	echo "<td><div><a onmouseover='facdet()'>".$row['inc_name']."</a></td><td><a onmouseover='incdet()'>".$row['ast_name']."</a></div></td></tr>";
 }
+echo "</table>";
 
 closeCon($conn);
 
