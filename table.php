@@ -26,7 +26,8 @@ tr:nth-child(even){
 	background-color:#e0e0d1;
 }
 </style>
-<table>
+<div>
+<table style="float: left">
 <tr>
 <th rowspan="2">Theory</th><th>Start</th><th>08:00</th><th>09:00</th><th>10:00</th><th>11:00</th><th>12:00</th><th></th><th rowspan="14">Lunch</th><th>14:00</th><th>15:00</th><th>16:00</th><th>17:00</th><th>18:00</th><th></th>
 </tr>
@@ -70,5 +71,6 @@ tr:nth-child(even){
 <td>L25</td><td>L26</td><td>L27</td><td>L28</td><td>L29</td><td>L30</td><td>L55</td><td>L56</td><td>L57</td><td>L58</td><td>L59</td><td>L60</td>
 </tr>
 </table>
+</div>
 </body>
 </html>

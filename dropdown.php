@@ -5,7 +5,7 @@
 	.dropbtn {
    		background-color: #4CAF50;
     	color: white;
-    	padding: 16px;
+    	padding: 10px;
     	font-size: 16px;
     	border: none;
     	cursor: pointer;
@@ -27,7 +27,7 @@
 	/* Links inside the dropdown */
 	.dropdown-content a {
 	    color: black;
-	    padding: 12px 16px;
+	    padding: 10px;
     	text-decoration: none;
     	display: block;
 	}
