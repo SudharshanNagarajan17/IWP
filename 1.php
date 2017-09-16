@@ -11,7 +11,24 @@
 	tr:nth-child(even){
 		background-color: #e6e6e6;
 	}
+	table{
+		cursor: default;
+	}
+	a{
+		cursor: pointer;
+	}
+	div.wr{
+		position:relative;
+		width: 100%;
+		right: 10%;
+		background-color: blue;
+	}
 </style>
+
+<div class="wr">
+	<iframe name="if2" width="35%" height="20%" frameborder="1" align="right"></iframe>
+</div>
+
 </html>
 
 
@@ -55,7 +72,7 @@ if($ls=='F1' || $ls=='ext')
 	{
 		echo "<tr><td>".$row['block']."</td><td>".$row['cno']."</td>";
 		echo "<td>-</td>";
-		echo "<td><div><a onmouseover=facdet('$i')>".$row['inc_name']."</a></td><td><a onmouseover=incdet('$i')>".$row['ast_name']."</div></td></tr>";
+		echo "<td><div class='asdf'><a onmouseover=facdet('$i')>Prof. ".$row['inc_name']."</a></td><td><a onmouseover=incdet('$i')>".$row['ast_name']."</div></td></tr>";
 		$i++;
 	}
 }
@@ -70,7 +87,7 @@ else
 			echo "<td>-</td>";
 		else
 			echo "<td>".$row[$ls]."</td>";
-		echo "<td><div><a onmouseover=facdet('$i')>".$row['inc_name']."</a></td><td><a onmouseover=incdet('$i')>".$row['ast_name']."</div></td></tr>";
+		echo "<td><div><a onmouseover=facdet('$i')>Prof. ".$row['inc_name']."</a></td><td><a onmouseover=incdet('$i')>".$row['ast_name']."</div></td></tr>";
 		$i++;
 	}
 }
@@ -85,13 +102,13 @@ echo "</table>";
 		a=<?php echo json_encode($fn); ?>;
 		b=<?php echo json_encode($fp); ?>;
 		c=<?php echo json_encode($fm); ?>;		
-		alert(a[x]+" "+b[x]+" "+c[x]);
+		window.open("det.php?ai="+a[x]+"&bi="+b[x]+"&ci="+c[x]+"&di="+1,'if2');
 	}
 	function incdet(x)
 	{
 		a=<?php echo json_encode($an); ?>;
 		b=<?php echo json_encode($ap); ?>;
 		c=<?php echo json_encode($am); ?>;		
-		alert(a[x]+" "+b[x]+" "+c[x]);
+		window.open("det.php?ai="+a[x]+"&bi="+b[x]+"&ci="+c[x]+"&di="+2,'if2');
 	}
 </script>

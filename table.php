@@ -8,7 +8,7 @@
 
 table.table1{
 	border-collapse: collapse;
-	width: 60%;
+	width: 90%;
 	border:1px solid black;
 	height: 400;
 	cursor: default;
@@ -54,22 +54,21 @@ a:visited {
     text-decoration: none;
     color: #000000;
 }
-a:hover {
-    text-decoration: none;
-    background-color: blue;
-    display: inline-block;
-}
+
 a:active {
     text-decoration: none;
 }
 a{
 	cursor: pointer;
 }
+.wrapper{
+	position:relative;
+	width: 100%;
+	height: 400;
+}
 </style>
 
-<iframe name="if1" width="40%" height="400" frameborder="0" align="right"></iframe>
-
-<table class="table1">
+<table align="center" class="table1">
 
 <tr>
 	<th rowspan="2">Theory</th><th>Start</th><th>08:00</th><th>09:00</th><th>10:00</th><th>11:00</th><th>12:00</th><th></th><th rowspan="9">LUNCH</th><th>14:00</th><th>15:00</th><th>16:00</th><th>17:00</th><th>18:00</th><th></th>
@@ -423,5 +422,8 @@ a{
 </tr>
 </table>
 
+<div class="wrapper">
+	<iframe name="if1" width="100%" height="370" frameborder="1" scrolling="no"></iframe>
+</div>
 </body>
 </html>
