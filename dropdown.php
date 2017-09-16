@@ -72,9 +72,10 @@ $i=0;
 echo "<div class='dropdown'>
  		<button class='dropbtn'>Dropdown</button>
   		<div class='dropdown-content'>";
+$i=0;
 while($row=mysqli_fetch_array($result))
 {
-	echo "<a href='#'>".$bl[$i]." ".$cn[$i]."</a>";
+	echo "<a href='$i'>".$bl[$i]." ".$cn[$i]."</a>";
 	$i++;
 }
 echo "</div>

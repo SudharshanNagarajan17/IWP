@@ -11,15 +11,16 @@ table.table1{
 	width: 60%;
 	border:1px solid black;
 	height: 400;
+	cursor: default;
 }
 table.table1 th{
 	border:1px solid black;
 	height:20px;
-	width: 4%;
+	width: 5%;
 }
 table.table1 td{
 	height:20px;
-	width: 4%;
+	width: 5%;
 	text-align: center;
 	border:1px solid black;
 }
@@ -30,6 +31,7 @@ table.table1 tr{
 
 table.table2 td{
 	border-left: 1px solid black;
+	width: 4%;
 	text-align: center;
 }
 table.table2{
@@ -40,13 +42,29 @@ table.table2{
 	width:100%;
 }
 table.table2 tr{
-
 	text-align: center;
-}
-table.table2 td:first child{
-	border-left: none;
+	padding: 0;
 }
 
+a:link {
+    text-decoration: none;
+    color: #000000;
+}
+a:visited {
+    text-decoration: none;
+    color: #000000;
+}
+a:hover {
+    text-decoration: none;
+    background-color: blue;
+    display: inline-block;
+}
+a:active {
+    text-decoration: none;
+}
+a{
+	cursor: pointer;
+}
 </style>
 
 <iframe name="if1" width="40%" height="400" frameborder="0" align="right"></iframe>
@@ -54,20 +72,20 @@ table.table2 td:first child{
 <table class="table1">
 
 <tr>
-<th rowspan="2">Theory</th><th>Start</th><th>08:00</th><th>09:00</th><th>10:00</th><th>11:00</th><th>12:00</th><th></th><th rowspan="14">Lunch</th><th>14:00</th><th>15:00</th><th>16:00</th><th>17:00</th><th>18:00</th><th></th>
+	<th rowspan="2">Theory</th><th>Start</th><th>08:00</th><th>09:00</th><th>10:00</th><th>11:00</th><th>12:00</th><th></th><th rowspan="9">LUNCH</th><th>14:00</th><th>15:00</th><th>16:00</th><th>17:00</th><th>18:00</th><th></th>
 </tr>
 <tr bgcolor="#e0e0d1">
-<th>End</th><th>08:50</th><th>09:50</th><th>10:50</th><th>11:50</th><th>12:50</th><th></th><th>14:50</th><th>15:50</th><th>16:50</th><th>17:50</th><th>18:50</th><th></th>
+	<th>End</th><th>08:50</th><th>09:50</th><th>10:50</th><th>11:50</th><th>12:50</th><th></th><th>14:50</th><th>15:50</th><th>16:50</th><th>17:50</th><th>18:50</th><th></th>
 </tr>
 <tr>
-<th rowspan="2">Lab</th><th>Start</th><th>08:00</th><th>-</th><th>10:00</th><th>-</th><th>11:50</th><th>-</th><th>14:00</th><th>-</th><th>16:00</th><th>-</th><th>17:50</th><th>-</th>
+	<th rowspan="2">Lab</th><th>Start</th><th>08:00</th><th>-</th><th>10:00</th><th>-</th><th>11:50</th><th>-</th><th>14:00</th><th>-</th><th>16:00</th><th>-</th><th>17:50</th><th>-</th>
 </tr>
 <tr bgcolor="#e0e0d1">
-<th>End</th><th>-</th><th>09:40</th><th>-</th><th>11:40</th><th>-</th><th>13:30</th><th>-</th><th>15:40</th><th>-</th><th>17:40</th><th>-</th><th>19:30</th>
+	<th>End</th><th>-</th><th>09:40</th><th>-</th><th>11:40</th><th>-</th><th>13:30</th><th>-</th><th>15:40</th><th>-</th><th>17:40</th><th>-</th><th>19:30</th>
 </tr>
 <tr>
 	
-	<td rowspan="1" colspan="2"><b>MONDAY</b></td>
+	<td colspan="2"><b>MONDAY</b></td>
 	<td colspan="2"><a href="1.php?ls=l1" target="if1">
 		<table class="table2">
 			<tr>
@@ -225,7 +243,12 @@ table.table2 td:first child{
 			</tr>
 		</table>
 	</a></td>
-	<td rowspan="1" colspan="3" align="center"><a href="1.php?ls=ext" target="if1"><b>Extramural</b></td></a>
+	<td colspan="3"><a href="1.php?ls=ext" target="if1">
+		<table class="table2">
+			<tr><td rowspan="2"><b>Extramural</b></td></tr>
+			<tr></tr>
+		</table>
+	</a></td>
 	<td colspan="2"><a href="1.php?ls=l43" target="if1">
 		<table class="table2">
 			<tr>

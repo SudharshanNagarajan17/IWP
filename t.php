@@ -3,7 +3,7 @@
 <style>
 table{
 	border-collapse: collapse;
-	border:1px solid black;
+	padding: 0;
 }
 
 th{
@@ -13,31 +13,33 @@ th{
 td{
 	height:20px;
 	text-align: center;
-	border:1px solid black;
 }
-tr{
-	border-bottom: 1px solid black;
-}
+
 a:link, a:visited {
     background-color: #f44336;
     color: white;
-    padding: 14px 25px;
+    padding: 0;
     text-align: center;
     text-decoration: none;
     display: inline-block;
 }
-
+table.table2 td{
+	width=0;
+}
 
 a:hover, a:active {
     background-color: red;
-} 
+}
+span {
+	style="cursor:default";
+}
 </style>
 <table>
 <tr>
 	
-	<td><b>MONDAY</b></td>
+	<td><span style="cursor:default">default</span><br><b>MONDAY</b></td>
 	<td><a href="1.php">
-		<table>
+		<table class="table2">
 			<tr>
 				<td>A1</td><td>F1</td>
 			</tr>
@@ -46,8 +48,8 @@ a:hover, a:active {
 			</tr>
 		</table>
 	</a></td>
-	<td>
-		<table>
+	<td><a href="=#">
+		<table class="table2">
 			<tr>
 				<td>D1</td><td>TB1</td>
 			</tr>

@@ -8,6 +8,9 @@
 		background-color: blue;
 		color: white;
 	}
+	tr:nth-child(even){
+		background-color: #e6e6e6;
+	}
 </style>
 </html>
 
