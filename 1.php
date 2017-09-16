@@ -46,27 +46,34 @@ $result=mysqli_query($conn,$a);
 
 $ls=$_GET['ls'];
 
-if($ls=='F1');
-else if($ls=='ext');
+if($ls=='F1' || $ls=='ext')
+{
+	while($row=mysqli_fetch_array($result))
+	{
+		echo "<tr><td>".$row['block']."</td><td>".$row['cno']."</td>";
+		echo "<td>-</td>";
+		echo "<td><div><a onmouseover=facdet('$i')>".$row['inc_name']."</a></td><td><a onmouseover=incdet('$i')>".$row['ast_name']."</div></td></tr>";
+		$i++;
+	}
+}
 
 else
 {
-
-$i=0;
-while($row=mysqli_fetch_array($result))
-{
-echo "<tr><td>".$row['block']."</td><td>".$row['cno']."</td>";
-if($row[$ls]==NULL)
-	echo "<td>-</td>";
-else
-	echo "<td>".$row[$ls]."</td>";
-echo "<td><div><a onmouseover=facdet('$i')>".$row['inc_name']."</a></td><td><a onmouseover=incdet('$i')>".$row['ast_name']."</div></td></tr>";
-$i++;
+	$i=0;
+	while($row=mysqli_fetch_array($result))
+	{
+		echo "<tr><td>".$row['block']."</td><td>".$row['cno']."</td>";
+		if($row[$ls]==NULL)
+			echo "<td>-</td>";
+		else
+			echo "<td>".$row[$ls]."</td>";
+		echo "<td><div><a onmouseover=facdet('$i')>".$row['inc_name']."</a></td><td><a onmouseover=incdet('$i')>".$row['ast_name']."</div></td></tr>";
+		$i++;
+	}
 }
 
 echo "</table>";
 
-}
 ?>
 
 <script>
