@@ -37,6 +37,7 @@ table.table2{
 	border:none;
 	border-collapse: collapse;
 	border-spacing: 8px 2px;
+	width:100%;
 }
 table.table2 tr{
 
