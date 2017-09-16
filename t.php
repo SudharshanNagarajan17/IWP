@@ -1,6 +1,37 @@
 <!doctype html>
 <html>
+<style>
+table{
+	border-collapse: collapse;
+	border:1px solid black;
+}
 
+th{
+	border:1px solid black;
+	height:25px;
+}
+td{
+	height:20px;
+	text-align: center;
+	border:1px solid black;
+}
+tr{
+	border-bottom: 1px solid black;
+}
+a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+a:hover, a:active {
+    background-color: red;
+} 
+</style>
 <table>
 <tr>
 	

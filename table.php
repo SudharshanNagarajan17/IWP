@@ -1,8 +1,3 @@
-<!--dei i'm feeling very sleepy. I'll edit the rest tomorrow. i'll add these to the repo as of now-->
-
-
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,41 +8,47 @@
 
 table.table1{
 	border-collapse: collapse;
-	width: 55%;
+	width: 60%;
 	border:1px solid black;
+	height: 400;
 }
 table.table1 th{
 	border:1px solid black;
-	height:25px;
+	height:20px;
+	width: 4%;
 }
 table.table1 td{
 	height:20px;
+	width: 4%;
 	text-align: center;
 	border:1px solid black;
 }
 table.table1 tr{
 	border-bottom: 1px solid black;
+	width: 4%;
 }
 
 table.table2 td{
 	border-left: 1px solid black;
 	text-align: center;
-	padding: 6px;
 }
 table.table2{
+	margin: auto;
 	border:none;
 	border-collapse: collapse;
 	border-spacing: 8px 2px;
 }
 table.table2 tr{
+
 	text-align: center;
 }
 table.table2 td:first child{
 	border-left: none;
-
+}
 
 </style>
 
+<iframe name="if1" width="40%" height="400" frameborder="0" align="right"></iframe>
 
 <table class="table1">
 
@@ -108,7 +109,7 @@ table.table2 td:first child{
 			</tr>
 		</table>
 	</a></td>
-	<td colspan="2"><a href="1.php?ls=l31" target="if1">
+	<td colspan="2"><a href="1.php?ls=l33" target="if1">
 		<table class="table2">
 			<tr>
 				<td>D2</td><td>TB2</td>
@@ -119,7 +120,7 @@ table.table2 td:first child{
 		</table>
 	</a></td>
 
-	<td colspan="2"><a href="1.php?ls=l33" target="if1">
+	<td colspan="2"><a href="1.php?ls=l35" target="if1">
 		<table class="table2">
 			<tr>
 				<td>TG2</td><td></td>
@@ -213,7 +214,7 @@ table.table2 td:first child{
 		</table>
 	</a></td>
 	
-	<td>
+	<td><a href="1.php?ls=F1" target="if1">
 		<table class="table2">
 			<tr>
 				<td>F1</td>
@@ -222,8 +223,8 @@ table.table2 td:first child{
 				<td>-</td>
 			</tr>
 		</table>
-	</td>
-	<td rowspan="1" colspan="3" align="center"><b>Extramural</b></td>
+	</a></td>
+	<td rowspan="1" colspan="3" align="center"><a href="1.php?ls=ext" target="if1"><b>Extramural</b></td></a>
 	<td colspan="2"><a href="1.php?ls=l43" target="if1">
 		<table class="table2">
 			<tr>
