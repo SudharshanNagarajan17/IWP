@@ -242,12 +242,9 @@ a{
 			</tr>
 		</table>
 	</a></td>
-	<td colspan="3"><a href="1.php?ls=ext" target="if1">
-		<table class="table2">
-			<tr><td rowspan="2"><b>Extramural</b></td></tr>
-			<tr></tr>
-		</table>
-	</a></td>
+	<td colspan="3">
+			<b>Extramural</b>
+	</td>
 	<td colspan="2"><a href="1.php?ls=l43" target="if1">
 		<table class="table2">
 			<tr>

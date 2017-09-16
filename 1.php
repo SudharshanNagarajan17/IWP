@@ -66,7 +66,7 @@ $result=mysqli_query($conn,$a);
 
 $ls=$_GET['ls'];
 
-if($ls=='F1' || $ls=='ext')
+if($ls=='F1')
 {
 	while($row=mysqli_fetch_array($result))
 	{
