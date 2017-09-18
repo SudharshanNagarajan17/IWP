@@ -2,6 +2,11 @@
 <html>
 <head>
     <title>General Time table</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 </head>
 <body>
 <style>
@@ -14,6 +19,7 @@
         cursor: default;
     }
     table.table1 th{
+    	text-align: center;
         border:1px solid black;
         height:20px;
         width: 5%;
@@ -26,32 +32,27 @@
     }
     table.table1 tr{
         border-bottom: 1px solid black;
-        width: 4%;
+        width: 5%;
     }
 
     table.table2 td{
         border-left: 1px solid black;
-        width: 4%;
+        height: 20px;
+        width: 5%;
         text-align: center;
     }
     table.table2{
+    	border:1px solid black;
         table-layout: fixed;
         margin: auto;
         border:none;
         border-collapse: collapse;
         border-style: hidden;
-        border-spacing: 8px 2px;
-        width:100%;
+        width:95%;
     }
     table.table2 tr{
         text-align: center;
         padding: 0;
-    }
-    th.lunch{
-        text-orientation:upright;
-        writing-mode: vertical-rl;
-        transform: rotate(90deg);
-        width:5%;
     }
 
     a:link {
@@ -81,6 +82,26 @@
         height: 400;
     }
 </style>
+
+<nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+
+            <div class="navbar-header">
+                <a href="http://chennai.vit.ac.in/" class="navbar-brand">VITCC</a>
+            </div>
+
+            <div>
+                <ul class="nav navbar-nav navbar-left">
+                    <li class="active"><a href="#">Home</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+        </div>
+</nav>
+
 
 <table align="center" class="table1">
 
@@ -257,7 +278,11 @@
                 </table>
             </a></td>
         <td colspan="3">
-            <b>Extramural</b>
+        	<table class="table2">
+        		<tr colspan="3">
+            		<td rowspan="2"><b>Extramural</b></td>
+            	</tr>
+            </table>
         </td>
         <td colspan="2"><a href="1.php?ls=l43" target="if1">
                 <table class="table2">
