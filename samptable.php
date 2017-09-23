@@ -96,13 +96,13 @@
 
             <div>
                 <ul class="nav navbar-nav navbar-left">
-                    <li class="active"><a href="#">Home</a></li>
+                    <li class="active"><a href="#">Search by slot</a></li>
+                    <li><a href="dropdown.php">Search by lab number</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">FFCS <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li><a href="https://academicscc.vit.ac.in/student/stud_login.asp">Student Login</a></li>
                             <li><a href="#">Teacher Login</a></li>
-                            <li><a href="#">Parent Login</a></li>
                         </ul>
                     </li>
                     <li><a href="http://moodlecc.vit.ac.in">Moodle</a></li>
