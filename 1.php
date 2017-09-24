@@ -70,7 +70,7 @@ echo "<div class='container'>
 			<th>Block</th>
 			<th>Class No.</th>
 			<th>Course Code</th>
-			<th>Faculty Incharge</th>
+			<th>Lab Incharge</th>
 			<th>Lab Assistant</th>
 		</tr>";
 
