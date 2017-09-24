@@ -1,3 +1,92 @@
+<?php
+include 'navbar.php';
+?>
+<html>
+<nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+
+            <div class="navbar-header">
+                <a href="http://chennai.vit.ac.in/" class="navbar-brand">VITCC</a>
+            </div>
+
+            <div>
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a href="table.php">Search by slot</a></li>
+                    <li class="active"><a href="dropdown.php">Search by lab number</a></li>
+                    <li class="drdn">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">FFCS <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li  class="sel"><a href="https://academicscc.vit.ac.in/student/stud_login.asp">Student Login</a></li>
+                            <li  class="sel"><a href="#">Teacher Login</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="http://moodlecc.vit.ac.in">Moodle</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+        </div>
+</nav>
+</html>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+
+        $("#drp1").click(function(){
+            $("#iFr2").slideDown("swing");
+        });
+    });
+
+</script>
+<style>
+	#iFr2{
+		display: none;
+	}
+	.dropdown{
+		left: 20px;
+	}
+</style>
+
+<?php
+
+include 'link.php';
+
+$conn=openCon();
+
+$a = "SELECT * FROM lab,incharge WHERE (incharge.block=lab.block and incharge.cno=lab.cno)";
+
+$result=mysqli_query($conn,$a);
+$i=0;
+while($row=mysqli_fetch_array($result))
+{
+	$bl[$i]=$row['block'];
+	$cn[$i]=$row['cno'];
+	$i++;
+}
+
+
+$result=mysqli_query($conn,$a);
+$i=0;
+echo "<div class='dropdown' id='drp1'>
+ 		<button class='dropbtn'>Select lab number<span class='caret'></span></button>
+  		<div class='dropdown-content'>";
+$i=0;
+while($row=mysqli_fetch_array($result))
+{
+	echo "<a onclick=disp('$i')>".$bl[$i]." ".$cn[$i]."</a>";
+	$i++;
+}
+echo "</div>
+		</div>";
+
+?>
+
+
+
 <!DOCTYPE html>
 <html>
 <style>
@@ -33,7 +122,7 @@
 	}
 	/* Change color of dropdown links on hover */
 	.dropdown-content a:hover {
-		background-color: #f1f1f1
+		background-color: #d9d9d9;
 	}
 	/* Show the dropdown menu on hover */
 	.dropdown:hover .dropdown-content {
@@ -43,44 +132,19 @@
 	.dropdown:hover .dropbtn {
     	background-color: #3e8e41;
 	}
+	.dropdown-content{
+		cursor: pointer;
+	}
 </style>
+	<div class="wr">
+		<iframe name="if3" width="100%" height="350" id="iFr2" frameborder="0"></iframe>
+	</div>
 </html>
 
 
-
-<?php
-
-include 'link.php';
-
-$conn=openCon();
-
-$a = "SELECT * FROM lab,incharge WHERE (incharge.block=lab.block and incharge.cno=lab.cno)";
-
-
-$result=mysqli_query($conn,$a);
-$i=0;
-while($row=mysqli_fetch_array($result))
-{
-	$bl[$i]=$row['block'];
-	$cn[$i]=$row['cno'];
-	$i++;
-}
-
-
-$result=mysqli_query($conn,$a);
-$i=0;
-echo "<div class='dropdown'>
- 		<button class='dropbtn'>Dropdown</button>
-  		<div class='dropdown-content'>";
-$i=0;
-while($row=mysqli_fetch_array($result))
-{
-	echo "<a href='$i'>".$bl[$i]." ".$cn[$i]."</a>";
-	$i++;
-}
-echo "</div>
-		</div>";
-
-?>
-
-
+<script>
+	function disp(i)
+	{
+		window.open("lnott3.php?i="+i,'if3');
+	}
+</script>

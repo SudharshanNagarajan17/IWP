@@ -1,5 +1,14 @@
 <!doctype html>
 <html>
+<head>
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
 <style>
 	td{
 		text-align: center;
@@ -7,27 +16,29 @@
 	th{
 		background-color: blue;
 		color: white;
+		text-align: center;
 	}
 	tr:nth-child(even){
 		background-color: #e6e6e6;
 	}
 	table{
 		cursor: default;
+		white-space: nowrap
 	}
 	a{
 		cursor: pointer;
 	}
-	div.wr{
-		position:relative;
-		width: 100%;
-		right: 10%;
-		background-color: blue;
+	a:link {
+    text-decoration: none;
+    color: black;
+	}
+	.container{
+		position: relative;
+		top: 20px;
 	}
 </style>
 
-<div class="wr">
-	<iframe name="if2" width="35%" height="20%" frameborder="1" align="right"></iframe>
-</div>
+
 
 </html>
 
@@ -53,7 +64,8 @@ while($row=mysqli_fetch_array($result))
 }
 
 
-echo "<table align='center'>
+echo "<div class='container'>
+<div class='table-responsive'><table align='center'>
 		<tr>
 			<th>Block</th>
 			<th>Class No.</th>
@@ -68,11 +80,15 @@ $ls=$_GET['ls'];
 
 if($ls=='F1')
 {
+	$i=0;
 	while($row=mysqli_fetch_array($result))
 	{
 		echo "<tr><td>".$row['block']."</td><td>".$row['cno']."</td>";
 		echo "<td>-</td>";
-		echo "<td><div class='asdf'><a onmouseover=facdet('$i')>Prof. ".$row['inc_name']."</a></td><td><a onmouseover=incdet('$i')>".$row['ast_name']."</div></td></tr>";
+		echo "<td><a href='#popupa".$i."' data-rel='popup' data-transition='pop'>Prof. ".$row['inc_name']."</a></td>
+
+
+		<td><a href='#popupb".$i."' data-rel='popup' data-transition='pop'>".$row['ast_name']."</a></td></tr>";
 		$i++;
 	}
 }
@@ -87,28 +103,30 @@ else
 			echo "<td>-</td>";
 		else
 			echo "<td>".$row[$ls]."</td>";
-		echo "<td><div><a onmouseover=facdet('$i')>Prof. ".$row['inc_name']."</a></td><td><a onmouseover=incdet('$i')>".$row['ast_name']."</div></td></tr>";
+		echo "<td><a href='#popupa".$i."' data-rel='popup' data-transition='pop'>Prof. ".$row['inc_name']."</a></td>
+
+		<td><a href='#popupb".$i."' data-rel='popup' data-transition='pop'>".$row['ast_name']."</a></td></tr>";
 		$i++;
 	}
 }
 
-echo "</table>";
+
+
+echo "</table></div></div>";
+
+
+
+for($j=0;$j<15;$j++)
+{
+echo "
+	<div data-role='popup' id='popupa".$j."'>
+		<p>Name: Prof. ".$fn[$j]."<br />Mobile No: ".$fp[$j]."<br />Mail ID: ".$fm[$j]."</p>
+	</div>
+
+	<div data-role='popup' id='popupb".$j."'>
+		<p>Name: ".$an[$j]."<br />Mobile No: ".$ap[$j]."<br />Mail ID: ".$am[$j]."</p>
+	</div>";
+}
+
 
 ?>
-
-<script>
-	function facdet(x)
-	{
-		a=<?php echo json_encode($fn); ?>;
-		b=<?php echo json_encode($fp); ?>;
-		c=<?php echo json_encode($fm); ?>;		
-		window.open("det.php?ai="+a[x]+"&bi="+b[x]+"&ci="+c[x]+"&di="+1,'if2');
-	}
-	function incdet(x)
-	{
-		a=<?php echo json_encode($an); ?>;
-		b=<?php echo json_encode($ap); ?>;
-		c=<?php echo json_encode($am); ?>;		
-		window.open("det.php?ai="+a[x]+"&bi="+b[x]+"&ci="+c[x]+"&di="+2,'if2');
-	}
-</script>

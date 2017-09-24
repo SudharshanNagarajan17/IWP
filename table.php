@@ -1,19 +1,58 @@
+<?php
+include 'navbar.php';
+?>
+
 <!DOCTYPE html>
 <html>
+<nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+
+            <div class="navbar-header">
+                <a href="http://chennai.vit.ac.in/" class="navbar-brand">VITCC</a>
+            </div>
+
+            <div>
+                <ul class="nav navbar-nav navbar-left">
+                    <li class="active"><a href="table.php">Search by slot</a></li>
+                    <li><a href="dropdown.php">Search by lab number</a></li>
+                    <li class="drdn">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">FFCS <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li class="sel"><a href="https://academicscc.vit.ac.in/student/stud_login.asp">Student Login</a></li>
+                            <li class="sel"><a href="#">Teacher Login</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="http://moodlecc.vit.ac.in">Moodle</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+        </div>
+</nav>
 <head>
-    <title>General Time table</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            $("#t1").click(function(){
+                $("#iFr").slideDown("swing");
+                });
+            });
+    </script>
 </head>
 <body>
 <style>
 
     table.table1{
         border-collapse: collapse;
-        width: 90%;
+        width: 100%;
+        min-width: 700px;
         border:1px solid black;
         height: 400;
         cursor: default;
@@ -29,6 +68,7 @@
         width: 5%;
         text-align: center;
         border:1px solid black;
+
     }
     table.table1 tr{
         border-bottom: 1px solid black;
@@ -79,31 +119,16 @@
     .wrapper{
         position:relative;
         width: 100%;
-        height: 400;
+    }
+    #iFr{
+        display: none;
     }
 </style>
 
-<nav class="navbar navbar-inverse">
-        <div class="container-fluid">
 
-            <div class="navbar-header">
-                <a href="http://chennai.vit.ac.in/" class="navbar-brand">VITCC</a>
-            </div>
-
-            <div>
-                <ul class="nav navbar-nav navbar-left">
-                    <li class="active"><a href="#">Home</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-
-        </div>
-</nav>
-
-
-<table align="center" class="table1">
+<div class="container">
+<div class="table-responsive">
+<table align="center" class="table1" id="t1">
 
     <tr>
         <th rowspan="2">Theory</th><th>Start</th><th>08:00</th><th>09:00</th><th>10:00</th><th>11:00</th><th>12:00</th><th></th><th rowspan="9">LUNCH</th><th>14:00</th><th>15:00</th><th>16:00</th><th>17:00</th><th>18:00</th><th></th>
@@ -457,9 +482,10 @@
 
     </tr>
 </table>
+</div></div>
 
 <div class="wrapper">
-    <iframe name="if1" width="100%" height="370" frameborder="1" scrolling="no"></iframe>
+    <iframe name="if1" id="iFr" width="100%" height="360" frameborder="0" scrolling="no"></iframe>
 </div>
 </body>
 </html>
