@@ -17,20 +17,25 @@
 		background-color: blue;
 		color: white;
 		text-align: center;
+		width: 5%;
 	}
 	tr:nth-child(even){
 		background-color: #e6e6e6;
 	}
 	table{
 		cursor: default;
-		white-space: nowrap
+		white-space: nowrap;
+		min-width: 550px;
 	}
 	a{
 		cursor: pointer;
 	}
 	a:link {
-    text-decoration: none;
-    color: black;
+    	text-decoration: none;
+    	color: black;
+	}
+	a:visited {
+    	color: green;
 	}
 	.container{
 		position: relative;
@@ -85,10 +90,10 @@ if($ls=='F1')
 	{
 		echo "<tr><td>".$row['block']."</td><td>".$row['cno']."</td>";
 		echo "<td>-</td>";
-		echo "<td><a href='#popupa".$i."' data-rel='popup' data-transition='pop'>Prof. ".$row['inc_name']."</a></td>
+		echo "<td><a href='#popupa".$i."' data-rel='popup' data-transition='pop' style='color: black;'>Prof. ".$row['inc_name']."</a></td>
 
 
-		<td><a href='#popupb".$i."' data-rel='popup' data-transition='pop'>".$row['ast_name']."</a></td></tr>";
+		<td><a href='#popupb".$i."' data-rel='popup' data-transition='pop' style='color: black;'>".$row['ast_name']."</a></td></tr>";
 		$i++;
 	}
 }
@@ -103,9 +108,9 @@ else
 			echo "<td>-</td>";
 		else
 			echo "<td>".$row[$ls]."</td>";
-		echo "<td><a href='#popupa".$i."' data-rel='popup' data-transition='pop'>Prof. ".$row['inc_name']."</a></td>
+		echo "<td><a href='#popupa".$i."' data-rel='popup' data-transition='pop' style='color: black;'>Prof. ".$row['inc_name']."</a></td>
 
-		<td><a href='#popupb".$i."' data-rel='popup' data-transition='pop'>".$row['ast_name']."</a></td></tr>";
+		<td><a href='#popupb".$i."' data-rel='popup' data-transition='pop' style='color: black;'>".$row['ast_name']."</a></td></tr>";
 		$i++;
 	}
 }

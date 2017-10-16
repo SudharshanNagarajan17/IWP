@@ -25,7 +25,7 @@ include 'navbar.php';
                     <li><a href="http://moodlecc.vit.ac.in">Moodle</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="contact.php">Contact</a></li>
                 </ul>
             </div>
 
@@ -41,7 +41,7 @@ include 'navbar.php';
         $(document).ready(function(){
 
             $("#t1").click(function(){
-                $("#iFr").slideDown("swing");
+                $("#iFr").slideDown("fast");
                 });
             });
     </script>
@@ -52,7 +52,7 @@ include 'navbar.php';
     table.table1{
         border-collapse: collapse;
         width: 100%;
-        min-width: 700px;
+        min-width: 800px;
         border:1px solid black;
         height: 400;
         cursor: default;

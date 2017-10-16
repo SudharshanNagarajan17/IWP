@@ -23,7 +23,7 @@ include 'navbar.php';
                     <li><a href="http://moodlecc.vit.ac.in">Moodle</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="contact.php">Contact</a></li>
                 </ul>
             </div>
 
@@ -37,7 +37,7 @@ include 'navbar.php';
 	$(document).ready(function(){
 
         $("#drp1").click(function(){
-            $("#iFr2").slideDown("swing");
+            $("#iFr2").slideDown("fast");
         });
     });
 
