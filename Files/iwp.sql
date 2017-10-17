@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Oct 13, 2017 at 03:44 AM
+-- Generation Time: Oct 17, 2017 at 07:07 AM
 -- Server version: 5.7.19-log
 -- PHP Version: 7.1.8
 
@@ -120,6 +120,29 @@ INSERT INTO `lab` (`block`, `cno`, `l1`, `l3`, `l5`, `l7`, `l9`, `l11`, `l13`, `
 ('AB1', '613', NULL, NULL, NULL, 'CSE3001', NULL, NULL, 'CSE3001', 'SWE2008', 'CSE3001', NULL, NULL, NULL, NULL, NULL, 'CSE3001', NULL, 'CSE3001', NULL, NULL, 'CSE3001', NULL, NULL, 'SWE3006', NULL, NULL, NULL, NULL, NULL),
 ('AB1', '614', 'CSE1701', 'CSE1701', 'CSE1002', 'CSE1701', 'CSE1701', NULL, NULL, NULL, 'CSE1701', 'ITA5704', NULL, 'CSE1701', 'CSE1701', 'CSE1701', 'CSE1002', NULL, 'CSE1701', NULL, NULL, 'CSE1701', NULL, NULL, 'CSE1701', 'CSE1002', NULL, 'CSE1701', NULL, NULL);
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `workshop`
+--
+
+CREATE TABLE `workshop` (
+  `name` varchar(25) NOT NULL,
+  `no` varchar(10) NOT NULL,
+  `dat` varchar(10) NOT NULL,
+  `tfr` varchar(5) NOT NULL,
+  `tto` varchar(5) NOT NULL,
+  `det` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `workshop`
+--
+
+INSERT INTO `workshop` (`name`, `no`, `dat`, `tfr`, `tto`, `det`) VALUES
+('asd', 'a', '10-32-1212', 'fds', 'nfh', 'mg'),
+('asd', 'AB1-206', '2018-10-16', 'fds', 'nfh', 'mg');
+
 --
 -- Indexes for dumped tables
 --
@@ -135,6 +158,12 @@ ALTER TABLE `incharge`
 --
 ALTER TABLE `lab`
   ADD PRIMARY KEY (`block`,`cno`);
+
+--
+-- Indexes for table `workshop`
+--
+ALTER TABLE `workshop`
+  ADD UNIQUE KEY `no` (`no`,`dat`);
 
 --
 -- Constraints for dumped tables

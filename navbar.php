@@ -8,7 +8,7 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 	</head>
 <style>
-.navbar-inverse .navbar-nav .open .dropdown-menu>li>a, .navbar-inverse .navbar-nav .open .dropdown-menu {
+.navbar-inverse .navbar-nav .open .dropdown-menu .navbar-inverse .navbar-nav .open .dropdown-menu {
         background-color: #333333;
         color:#ffffff;
     }

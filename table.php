@@ -19,7 +19,15 @@ include 'navbar.php';
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">FFCS <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li class="sel"><a href="https://academicscc.vit.ac.in/student/stud_login.asp">Student Login</a></li>
-                            <li class="sel"><a href="#">Teacher Login</a></li>
+                            <li class="sel"><a href="#">Faculty Login</a></li>
+                        </ul>
+                    </li>
+                    <li class="drdn">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Workshops <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li class="sel"><a href="#">View</a></li>
+                            <li class="sel"><a href="facwk.php">Faculty Login</a></li>
+                            <li class="sel"><a href="admwk.php">Admin Login</a></li>
                         </ul>
                     </li>
                     <li><a href="http://moodlecc.vit.ac.in">Moodle</a></li>
