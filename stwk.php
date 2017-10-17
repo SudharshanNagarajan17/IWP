@@ -1,14 +1,37 @@
 <?php
+
 include "navbar.php";
+
+
 ?>
 <!DOCTYPE html>
 <html>
-<style>
-	.wrapper{
-		position:relative;
-        width: 100%;
+<head>
+	<title></title>
+</head>
+<style type="text/css">
+	td{
+		text-align: center;
+	}
+	th{
+		background-color: blue;
+		color: white;
+		text-align: center;
+		min-width: 100px;
+	}
+	tr:nth-child(even){
+		background-color: #e6e6e6;
+	}
+	table{
+		cursor: default;
+		white-space: nowrap;
+		width: 100%;
+	}
+	h3{
+		margin-left: 50px;
 	}
 </style>
+<body>
 <nav class="navbar navbar-inverse">
         <div class="container-fluid">
 
@@ -30,7 +53,7 @@ include "navbar.php";
                     <li class="drdn">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Workshops <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li class="sel"><a href="stwk.php">View</a></li>
+                            <li   class="active" class="sel"><a href="stwk.php">View</a></li>
                             <li class="sel"><a href="facwk.php">Faculty Login</a></li>
                             <li class="sel"><a href="admwk.php">Admin Login</a></li>
                         </ul>
@@ -38,13 +61,36 @@ include "navbar.php";
                     <li><a href="http://moodlecc.vit.ac.in">Moodle</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="contact.php">Contact</a></li>
+                    <li><a href="contact.php">Contact</a></li>
                 </ul>
             </div>
 
         </div>
 </nav>
-<div class="wrapper">
-    <iframe src="contact2.php" width="100%" height="390" frameborder="0" scrolling="no"></iframe>
-</div>
+</body>
 </html>
+
+<?php
+
+include 'link.php';
+
+$conn=openCon();
+
+$a = "SELECT * FROM workshop ORDER BY dat";
+
+$result=mysqli_query($conn,$a);
+
+echo "<h3>Workshop Details</h3>";
+echo "<div class='container'>
+		<div class='table-responsive'>
+		<table>
+		<tr><th>Date</th><th>From</th><th>To</th><th>Lab Number</th><th>Workshop Details</th><th>Faculty Name</th>";
+while($m=mysqli_fetch_array($result))
+{
+	echo "<tr><td>".$m['dat']."</td><td>".$m['tfr']."</td><td>".$m['tto']."</td><td>".$m['no']."</td><td>".$m['det']."</td><td>".$m['name']."</td></tr>";
+}
+
+
+echo "</table></div></div><br><br>";
+
+?>

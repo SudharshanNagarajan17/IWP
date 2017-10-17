@@ -139,7 +139,7 @@ var modal = document.getElementById('id01');
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
-        window.open(window.history.back(),"_self");
+        window.open("table.php","_self");
     }
 }
 </script>

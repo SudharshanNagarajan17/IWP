@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Oct 17, 2017 at 07:07 AM
+-- Generation Time: Oct 17, 2017 at 11:57 AM
 -- Server version: 5.7.19-log
 -- PHP Version: 7.1.8
 
@@ -132,16 +132,17 @@ CREATE TABLE `workshop` (
   `dat` varchar(10) NOT NULL,
   `tfr` varchar(5) NOT NULL,
   `tto` varchar(5) NOT NULL,
-  `det` varchar(100) NOT NULL
+  `det` varchar(100) NOT NULL,
+  `sno` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Dumping data for table `workshop`
 --
 
-INSERT INTO `workshop` (`name`, `no`, `dat`, `tfr`, `tto`, `det`) VALUES
-('asd', 'a', '10-32-1212', 'fds', 'nfh', 'mg'),
-('asd', 'AB1-206', '2018-10-16', 'fds', 'nfh', 'mg');
+INSERT INTO `workshop` (`name`, `no`, `dat`, `tfr`, `tto`, `det`, `sno`) VALUES
+('p', 'p', 'p', 'p', 'p', 'p', 6),
+('6', '4', '2', '3', 'f', 'd', 7);
 
 --
 -- Indexes for dumped tables
@@ -163,7 +164,18 @@ ALTER TABLE `lab`
 -- Indexes for table `workshop`
 --
 ALTER TABLE `workshop`
+  ADD PRIMARY KEY (`sno`),
   ADD UNIQUE KEY `no` (`no`,`dat`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `workshop`
+--
+ALTER TABLE `workshop`
+  MODIFY `sno` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- Constraints for dumped tables

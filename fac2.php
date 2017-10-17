@@ -21,8 +21,8 @@ while($row=mysqli_fetch_array($a))
 		echo "<script>alert('Workshop taking place');	window.open(window.history.back(),'_self');</script>";
 }
 $conn=openCon();
-$p="INSERT INTO workshop VALUES('".$a."','".$b."','".$c."','".$d."','".$e."','".$f."')";
+$p="INSERT INTO workshop(name,no,dat,tfr,tto,det) VALUES('w','t','r','d','a','c')";
 $a=mysqli_query($conn,$p);
 if($a)
-	echo "<script>alert('Workshop details added');	window.open('table.php','_self');</script>";
+	echo "<script>alert('Workshop details added');	window.open('facwk.php','_self');</script>";
 ?>
