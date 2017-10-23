@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Oct 17, 2017 at 11:57 AM
+-- Generation Time: Oct 23, 2017 at 04:49 PM
 -- Server version: 5.7.19-log
 -- PHP Version: 7.1.8
 
@@ -141,8 +141,8 @@ CREATE TABLE `workshop` (
 --
 
 INSERT INTO `workshop` (`name`, `no`, `dat`, `tfr`, `tto`, `det`, `sno`) VALUES
-('p', 'p', 'p', 'p', 'p', 'p', 6),
-('6', '4', '2', '3', 'f', 'd', 7);
+('asd', 'AB1-205', '2017-11-07', '09:00', '16:00', 'IOT', 11),
+('qwe', 'AB1-205', '2017-11-08', '17:00', '18:00', 'iot2', 12);
 
 --
 -- Indexes for dumped tables
@@ -175,7 +175,7 @@ ALTER TABLE `workshop`
 -- AUTO_INCREMENT for table `workshop`
 --
 ALTER TABLE `workshop`
-  MODIFY `sno` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `sno` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- Constraints for dumped tables

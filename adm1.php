@@ -118,7 +118,7 @@ include 'link.php';
 
 $conn=openCon();
 
-$a = "SELECT * FROM workshop ORDER BY dat";
+$a = "SELECT * FROM workshop ORDER BY dat,tfr,no";
 
 $result=mysqli_query($conn,$a);
 
@@ -155,7 +155,7 @@ fclose($file);
 echo "<center><button><a class='down' href='workshop-date.csv' download>Download</a></button></center><br><br>";
 
 
-$a = "SELECT * FROM workshop ORDER BY no";
+$a = "SELECT * FROM workshop ORDER BY no,dat";
 $result=mysqli_query($conn,$a);
 
 $file = fopen("workshop-lno.csv","w");

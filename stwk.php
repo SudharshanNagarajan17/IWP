@@ -76,7 +76,7 @@ include 'link.php';
 
 $conn=openCon();
 
-$a = "SELECT * FROM workshop ORDER BY dat";
+$a = "SELECT * FROM workshop ORDER BY dat,tfr,no";
 
 $result=mysqli_query($conn,$a);
 

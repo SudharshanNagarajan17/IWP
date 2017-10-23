@@ -10,6 +10,8 @@ $f=$_POST['t2'];
 if($e<=$d)
 		echo "<script>alert('Incorrect Timings');	window.open(window.history.back(),'_self');</script>";
 
+else{
+
 include "link.php";	
 
 $conn=openCon();
@@ -36,5 +38,6 @@ if($k==0)
 	$a=mysqli_query($conn,$p);
 	if($a)
 		echo "<script>alert('Workshop details added');	window.open('facwk.php','_self');</script>";
+}
 }
 ?>
