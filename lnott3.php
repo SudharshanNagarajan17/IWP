@@ -156,7 +156,7 @@ echo "
 </table></div></div>
 
 <div class='pos'>
-<br><b>Lab Incharge: </b><a href='#popupBasic1' data-rel='popup' data-transition='pop'>".$row['inc_name']."</a>
+<br><b>Lab Incharge: </b><a href='#popupBasic1' data-rel='popup' data-transition='pop'>Prof. ".$row['inc_name']."</a>
 
 
 
