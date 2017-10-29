@@ -1,5 +1,5 @@
 <?php
-
+error_reporting(0);
 $username="admin";
 $password="admin";
 
@@ -79,11 +79,16 @@ include 'navbar.php';
         <div class="container-fluid">
 
             <div class="navbar-header">
-                <a href="http://chennai.vit.ac.in/" class="navbar-brand">VITCC</a>
-            </div>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="http://chennai.vit.ac.in/" class="navbar-brand">VITCC</a>
+        </div>
 
-            <div>
-                <ul class="nav navbar-nav navbar-left">
+            <div class="collapse navbar-collapse" id="mainNavBar">
+                <ul class="nav navbar-nav">
                     <li><a href="table.php">Search by slot</a></li>
                     <li><a href="dropdown.php">Search by lab number</a></li>
                     <li class="drdn">

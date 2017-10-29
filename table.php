@@ -4,6 +4,22 @@ include 'navbar.php';
 
 <!DOCTYPE html>
 <html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            $("#t1").click(function(){
+                $("#iFr").slideDown("fast");
+                });
+            });
+    </script>
+</head>
+<body>
 <nav class="navbar navbar-inverse">
         <div class="container-fluid">
 
@@ -13,18 +29,18 @@ include 'navbar.php';
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
+            <a href="http://chennai.vit.ac.in/" class="navbar-brand">VITCC</a>
         </div>
 
             <div class="collapse navbar-collapse" id="mainNavBar">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="http://chennai.vit.ac.in/" class="navbar-brand">VITCC</a></li>
-                    <li><a href="table.php">Search by slot</a></li>
+                    <li  class="active"><a href="table.php">Search by slot</a></li>
                     <li><a href="dropdown.php">Search by lab number</a></li>
                     <li class="drdn">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">FFCS <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li class="sel"><a href="https://academicscc.vit.ac.in/student/stud_login.asp">Student Login</a></li>
-                            <li class="sel"><a href="https://academicscc.vit.ac.in/faculty/fac_login.asp">Faculty Login</a></li>
+                            <li  class="sel"><a href="https://academicscc.vit.ac.in/student/stud_login.asp">Student Login</a></li>
+                            <li  class="sel"><a href="https://academicscc.vit.ac.in/faculty/fac_login.asp">Faculty Login</a></li>
                         </ul>
                     </li>
                     <li class="drdn">
@@ -44,22 +60,7 @@ include 'navbar.php';
 
         </div>
 </nav>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <script>
-        $(document).ready(function(){
 
-            $("#t1").click(function(){
-                $("#iFr").slideDown("fast");
-                });
-            });
-    </script>
-</head>
-<body>
 <style>
 
     table.table1{
