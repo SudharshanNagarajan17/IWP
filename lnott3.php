@@ -11,11 +11,15 @@
 	</head>
 <style>
 
+html, body{
+	height: 100%;
+}
 table.table4{
+	table-layout: fixed;
 	border-collapse: collapse;
-	width: 100%;
+	width: 80%;
+	height: 100%;
 	border:1px solid black;
-	height: 400;
 }
 table.table4 th{
 	border:1px solid black;
@@ -88,7 +92,8 @@ echo "<h2 class='pos'>".$row['block']." ".$row['cno']."</h2>";
  
 echo "
 <div class='container'>
-<div class='table-responsive'><table class='table4' align='center'>
+<div class='table-responsive'>
+<table class='table4' align='center' height=60%>
 
 <tr>
 <th rowspan='2'>Theory</th><th>Start</th><th>08:00</th><th>09:00</th><th>10:00</th><th>11:00</th><th>12:00</th><th></th><th rowspan='14'>Lunch</th><th>14:00</th><th>15:00</th><th>16:00</th><th>17:00</th><th>18:00</th><th></th>
