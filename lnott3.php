@@ -17,7 +17,8 @@ html, body{
 table.table4{
 	table-layout: fixed;
 	border-collapse: collapse;
-	width: 80%;
+	width: 100%;
+	min-width: 800px;
 	height: 100%;
 	border:1px solid black;
 }
