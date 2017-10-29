@@ -24,7 +24,7 @@ include "navbar.php";
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">FFCS <span class="caret"></span></a>
                         <ul class="dropdown-menu">
                             <li class="sel"><a href="https://academicscc.vit.ac.in/student/stud_login.asp">Student Login</a></li>
-                            <li class="sel"><a href="#">Faculty Login</a></li>
+                            <li class="sel"><a href="https://academicscc.vit.ac.in/faculty/fac_login.asp">Faculty Login</a></li>
                         </ul>
                     </li>
                     <li class="drdn">
