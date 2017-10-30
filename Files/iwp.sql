@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Oct 23, 2017 at 04:49 PM
+-- Generation Time: Oct 30, 2017 at 03:13 PM
 -- Server version: 5.7.19-log
 -- PHP Version: 7.1.8
 
@@ -141,8 +141,12 @@ CREATE TABLE `workshop` (
 --
 
 INSERT INTO `workshop` (`name`, `no`, `dat`, `tfr`, `tto`, `det`, `sno`) VALUES
-('asd', 'AB1-205', '2017-11-07', '09:00', '16:00', 'IOT', 11),
-('qwe', 'AB1-205', '2017-11-08', '17:00', '18:00', 'iot2', 12);
+('abc', 'AB1-205', '2017-11-01', '09:00', '17:00', 'qwerty', 13),
+('xyz', 'AB1-210', '2017-11-06', '08:30', '14:45', 'asdfg', 14),
+('q', 'AB1-205', '2017-11-01', '18:01', '20:00', 'p', 15),
+('p', 'AB1-205', '2017-11-01', '17:30', '17:45', 'lkj', 16),
+('y', 'AB1-205', '2017-11-01', '17:00', '17:30', 'vbn,', 18),
+('fsd', 'AB1-210', '2018-02-03', '01:00', '18:00', 'odo k', 21);
 
 --
 -- Indexes for dumped tables
@@ -164,8 +168,7 @@ ALTER TABLE `lab`
 -- Indexes for table `workshop`
 --
 ALTER TABLE `workshop`
-  ADD PRIMARY KEY (`sno`),
-  ADD UNIQUE KEY `no` (`no`,`dat`);
+  ADD PRIMARY KEY (`sno`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -175,7 +178,7 @@ ALTER TABLE `workshop`
 -- AUTO_INCREMENT for table `workshop`
 --
 ALTER TABLE `workshop`
-  MODIFY `sno` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `sno` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- Constraints for dumped tables

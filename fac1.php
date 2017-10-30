@@ -98,7 +98,7 @@ div {
 
 
     <label>Date</label>
-    <input type="date" name="d1" min="2017-10-17" required>
+    <input type="date" name="d1" required>
     <label>From</label>
     <input type="time" name="tt1" required>
     <label>To</label>

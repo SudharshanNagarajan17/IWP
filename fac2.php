@@ -7,8 +7,32 @@ $d=$_POST['tt1'];
 $e=$_POST['tt2'];
 $f=$_POST['t2'];
 
+
+$qwe=1;
 if($e<=$d)
-		echo "<script>alert('Incorrect Timings');	window.open(window.history.back(),'_self');</script>";
+{
+	echo "<script>alert('Incorrect Timings');</script>";
+	$qwe=0;
+}
+for($i=0;$i<strlen($a);$i++)
+{
+	if($a[$i]==";")
+	{
+		echo "<script>alert('Character ; is invalid');</script>";
+		$qwe=0;
+	}
+}
+for($i=0;$i<strlen($f);$i++)
+{
+	if($f[$i]==";")
+	{
+		echo "<script>alert('Character ; is invalid');</script>";
+		$qwe=0;
+	}
+}
+
+if($qwe==0)
+	echo "<script>window.open(window.history.back(),'_self');</script>";
 
 else{
 

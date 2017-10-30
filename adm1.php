@@ -61,18 +61,38 @@ include 'navbar.php';
 	button:hover{
 		background-color:#595959; 
 	}
-	button {
-    background-color: #bfbfbf;
-    border: none;
-    color: white;
-    padding: 4px 8px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-}
+	button,input[type=submit]{
+    	background-color: #bfbfbf;
+    	border: none;
+    	color: white;
+    	padding: 4px 8px;
+    	text-align: center;
+    	text-decoration: none;
+    	display: inline-block;
+    	font-size: 16px;
+    	margin: 4px 2px;
+    	cursor: pointer;
+    	border-radius: 4px;
+    	color: black;
+	}
+	input[type="submit"]:hover{
+		background-color:#595959;
+		color: black;
+	}
+	input[type=date]{
+		width: 15%;
+		min-width: 200px;
+    	padding: 0px 0px;
+    	margin: 8px 0;
+    	margin-left: 20px;
+    	display: inline-block;
+    	border: 1px solid #ccc;
+    	border-radius: 4px;
+    	box-sizing: border-box;
+	}
+	form{
+		margin-left: 75px;
+	}
 </style>
 <body>
 <nav class="navbar navbar-inverse">
@@ -132,8 +152,8 @@ $file = fopen("workshop-date.csv","w");
 
 $k=0;
 $list=array();
-$list[$k++]= "Date,From,To,Lab Number,Workshop Details,Faculty Name";
-$list[$k++]= ",,,,,";
+$list[$k++]= "Date;From;To;Lab Number;Workshop Details;Faculty Name";
+$list[$k++]= ";;;;;";
 
 
 echo "<h3>Date Wise</h3>";
@@ -146,15 +166,15 @@ while($m=mysqli_fetch_array($result))
 	$i=$m['sno'];
 	echo "<tr><td>".$m['dat']."</td><td>".$m['tfr']."</td><td>".$m['tto']."</td><td>".$m['no']."</td><td>".$m['det']."</td><td>".$m['name']."</td><td><a onclick='del(".$i.")'>Delete</a></td></tr>";
 
-	$list[$k++]=$m['dat'].",".$m['tfr'].",".$m['tto'].",".$m['no'].",".$m['det'].",".$m['name'];
+	$list[$k++]=$m['dat'].";".$m['tfr'].";".$m['tto'].";".$m['no'].";".$m['det'].";".$m['name'];
 }
 
 foreach ($list as $line)
 {
-  fputcsv($file,explode(',',$line));
+  fputcsv($file,explode(';',$line));
 }
 
-echo "</table></div></div><br><br>";
+echo "</table></div></div><br>";
 
 fclose($file);
 echo "<center><button><a class='down' href='workshop-date.csv' download>Download</a></button></center><br><br>";
@@ -167,8 +187,8 @@ $file = fopen("workshop-lno.csv","w");
 
 $k=0;
 $list=array();
-$list[$k++]= "Lab Number,Workshop Details,Faculty Name,Date,From,To";
-$list[$k++]= ",,,,,";
+$list[$k++]= "Lab Number;Workshop Details;Faculty Name;Date;From;To";
+$list[$k++]= ";;;;;";
 
 echo "<h3>Lab Wise</h3>";
 echo "<div class='container'>
@@ -179,18 +199,22 @@ while($m=mysqli_fetch_array($result))
 {
 	$i=$m['sno'];
 	echo "<tr><td>".$m['no']."</td><td>".$m['det']."</td><td>".$m['name']."</td><td>".$m['dat']."</td><td>".$m['tfr']."</td><td>".$m['tto']."</td><td><a onclick='del(".$i.")'>Delete</a></td></tr>";
-	$list[$k++]=$m['no'].",".$m['det'].",".$m['name'].",".$m['dat'].",".$m['tfr'].",".$m['tto'];
+	$list[$k++]=$m['no'].";".$m['det'].";".$m['name'].";".$m['dat'].";".$m['tfr'].";".$m['tto'];
 }
 
 foreach ($list as $line)
 {
-  fputcsv($file,explode(',',$line));
+  fputcsv($file,explode(';',$line));
 }
 
-echo "</table></div></div>";
+echo "</table></div></div><br>";
 
 fclose($file);
 echo "<center><button><a class='down' href='workshop-lno.csv' download>Download</a></button></center>";
+
+
+echo "<h3>Report</h3>";
+
 ?>
 
 <script type="text/javascript">
@@ -203,3 +227,13 @@ echo "<center><button><a class='down' href='workshop-lno.csv' download>Download<
 		}
 	}
 </script>
+
+<html>
+<body>
+	<form action="adm2.php" method="post" target="_blank">
+		<label>From:</label><br><input type="date" name="d1" required>
+		<br><label>To:</label><br><input type="date" name="d2" required>
+		<br><input style="margin-left: 70px" type="submit" value="Download">
+	</form>
+</body>
+</html>
