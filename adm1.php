@@ -160,7 +160,7 @@ fclose($file);
 echo "<center><button><a class='down' href='workshop-date.csv' download>Download</a></button></center><br><br>";
 
 
-$a = "SELECT * FROM workshop ORDER BY no,dat";
+$a = "SELECT * FROM workshop ORDER BY no,dat,tfr";
 $result=mysqli_query($conn,$a);
 
 $file = fopen("workshop-lno.csv","w");

@@ -34,13 +34,13 @@ include 'navbar.php';
 
             <div class="collapse navbar-collapse" id="mainNavBar">
                 <ul class="nav navbar-nav">
-                    <li  class="active"><a href="table.php">Search by slot</a></li>
+                    <li class="active"><a href="table.php">Search by slot</a></li>
                     <li><a href="dropdown.php">Search by lab number</a></li>
                     <li class="drdn">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">FFCS <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li  class="sel"><a href="https://academicscc.vit.ac.in/student/stud_login.asp">Student Login</a></li>
-                            <li  class="sel"><a href="https://academicscc.vit.ac.in/faculty/fac_login.asp">Faculty Login</a></li>
+                            <li class="sel"><a href="https://academicscc.vit.ac.in/student/stud_login.asp">Student Login</a></li>
+                            <li class="sel"><a href="https://academicscc.vit.ac.in/faculty/fac_login.asp">Faculty Login</a></li>
                         </ul>
                     </li>
                     <li class="drdn">

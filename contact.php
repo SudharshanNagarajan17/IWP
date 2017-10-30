@@ -50,6 +50,6 @@ include "navbar.php";
         </div>
 </nav>
 <div class="wrapper">
-    <iframe src="contact2.php" width="100%" height="390" frameborder="0" scrolling="no"></iframe>
+    <iframe src="contact2.php" width="100%" height="450" frameborder="0" scrolling="no"></iframe>
 </div>
 </html>
