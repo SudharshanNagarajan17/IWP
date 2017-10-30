@@ -4,7 +4,7 @@ $fromdate=$_POST['d1'];
 $todate=$_POST['d2'];
 
 if($fromdate>$todate)
-		echo "<script>alert('Incorrect Timings');	window.close();</script>";
+		echo "<script>alert('Incorrect dates');	window.close();</script>";
 else{
 
 include 'link.php';
