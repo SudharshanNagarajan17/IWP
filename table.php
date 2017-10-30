@@ -1,6 +1,3 @@
-<?php
-include 'navbar.php';
-?>
 
 <!DOCTYPE html>
 <html>
@@ -112,7 +109,6 @@ include 'navbar.php';
     a:link {
         text-decoration: none;
         color: #000000;
-        width: 100%;
     }
     a:visited {
         text-decoration: none;
