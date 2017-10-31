@@ -9,12 +9,14 @@ $p=$_POST['t2'];
 if(strcmp($username,$u)!=0 || strcmp($password,$p)!=0)
 	echo "<script>alert('Invalid Credentials');window.open(window.history.back(),'_self');</script>";
 
-
 ?>
-
 
 <!DOCTYPE html>
 <html>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
 <style>
 input[type=text], select {
     width: 100%;
@@ -68,7 +70,9 @@ div {
     background-color: #f2f2f2;
     padding: 20px;
 }
-
+label{
+	font-weight: bold;
+}
 </style>
 <body>
 
@@ -76,7 +80,7 @@ div {
 
 
 <h1><center>WORKSHOP DETAILS</center></h1>
-<div>
+<div class="form-group">
   <form action="fac2.php" method="post">
     <label>Name</label>
     <input type="text" id="fname" name="t1" placeholder="Enter your name" required>
@@ -104,7 +108,7 @@ div {
     <label>To</label>
     <input type="time" name="tt2" required>
     <label>Workshop Details</label>
-    <input type="text" id="lname" name="t2" placeholder="Enter the workshop details">
+    <input type="text" id="lname" name="t2" required placeholder="Enter the workshop details">
 
     
   
