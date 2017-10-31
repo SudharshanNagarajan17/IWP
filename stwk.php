@@ -95,6 +95,40 @@ while($m=mysqli_fetch_array($result))
 	echo "<tr><td>".$m['dat']."</td><td>".$m['tfr']."</td><td>".$m['tto']."</td><td>".$m['no']."</td><td>".$m['det']."</td><td>".$m['name']."</td></tr>";
 }
 
+echo "</table></div></div><br><br>";
+
+
+$sd=(string)date('Y-m-d');
+
+$a = "SELECT * FROM workshop WHERE dat<'$sd' ORDER BY dat,tfr,no";
+
+$result=mysqli_query($conn,$a);
+
+echo "<h3>Completed Workshops</h3>";
+echo "<div class='container'>
+		<div class='table-responsive'>
+		<table>
+		<tr><th>Date</th><th>Workshop Details</th><th>Faculty Name</th><th>Lab Number</th><th>From</th><th>To</th></tr>";
+while($m=mysqli_fetch_array($result))
+{
+	echo "<tr><td>".$m['dat']."</td><td>".$m['det']."</td><td>".$m['name']."</td><td>".$m['no']."</td><td>".$m['tfr']."</td><td>".$m['tto']."</td></tr>";
+}
+
+echo "</table></div></div><br><br>";
+
+$a = "SELECT * FROM workshop WHERE dat>'$sd' ORDER BY dat,tfr,no";
+
+$result=mysqli_query($conn,$a);
+
+echo "<h3>Upcoming Workshops</h3>";
+echo "<div class='container'>
+		<div class='table-responsive'>
+		<table>
+		<tr><th>Date</th><th>Workshop Details</th><th>Faculty Name</th><th>Lab Number</th><th>From</th><th>To</th></tr>";
+while($m=mysqli_fetch_array($result))
+{
+	echo "<tr><td>".$m['dat']."</td><td>".$m['det']."</td><td>".$m['name']."</td><td>".$m['no']."</td><td>".$m['tfr']."</td><td>".$m['tto']."</td></tr>";
+}
 
 echo "</table></div></div><br><br>";
 

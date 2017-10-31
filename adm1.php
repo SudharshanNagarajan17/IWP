@@ -236,3 +236,74 @@ echo "<h3>Report</h3>";
 	</form>
 </body>
 </html>
+
+<?php
+
+$sd=(string)date('Y-m-d');
+
+
+$a = "SELECT * FROM workshop WHERE dat<'$sd' ORDER BY dat,tfr,no";
+$result=mysqli_query($conn,$a);
+
+$file = fopen("workshop-comp.csv","w");
+
+$k=0;
+$list=array();
+$list[$k++]= "Date;Workshop Details;Faculty Name;Lab Number;From;To";
+$list[$k++]= ";;;;;";
+
+echo "<br><br><h3>Completed Workshops</h3>";
+echo "<div class='container'>
+		<div class='table-responsive'>
+		<table>
+		<tr><th>Date</th><th>Workshop Details</th><th>Faculty Name</th><th>Lab Number</th><th>From</th><th>To</th></tr>";
+while($m=mysqli_fetch_array($result))
+{
+	$i=$m['sno'];
+	echo "<tr><td>".$m['dat']."</td><td>".$m['det']."</td><td>".$m['name']."</td><td>".$m['no']."</td><td>".$m['tfr']."</td><td>".$m['tto']."</td><td><a onclick='del(".$i.")'>Delete</a></td></tr>";
+	$list[$k++]=$m['dat'].";".$m['det'].";".$m['no'].";".$m['name'].";".$m['tfr'].";".$m['tto'];
+}
+
+foreach ($list as $line)
+{
+  fputcsv($file,explode(';',$line));
+}
+
+echo "</table></div></div><br>";
+
+fclose($file);
+echo "<center><button><a class='down' href='workshop-comp.csv' download>Download</a></button></center><br><br>";
+
+$a = "SELECT * FROM workshop WHERE dat>'$sd' ORDER BY dat,tfr,no";
+$result=mysqli_query($conn,$a);
+
+$file = fopen("workshop-upc.csv","w");
+
+$k=0;
+$list=array();
+$list[$k++]= "Date;Workshop Details;Faculty Name;Lab Number;From;To";
+$list[$k++]= ";;;;;";
+
+echo "<h3>Upcoming Workshops</h3>";
+echo "<div class='container'>
+		<div class='table-responsive'>
+		<table>
+		<tr><th>Date</th><th>Workshop Details</th><th>Faculty Name</th><th>Lab Number</th><th>From</th><th>To</th></tr>";
+while($m=mysqli_fetch_array($result))
+{
+	$i=$m['sno'];
+	echo "<tr><td>".$m['dat']."</td><td>".$m['det']."</td><td>".$m['name']."</td><td>".$m['no']."</td><td>".$m['tfr']."</td><td>".$m['tto']."</td><td><a onclick='del(".$i.")'>Delete</a></td></tr>";
+	$list[$k++]=$m['dat'].";".$m['det'].";".$m['no'].";".$m['name'].";".$m['tfr'].";".$m['tto'];
+}
+
+foreach ($list as $line)
+{
+  fputcsv($file,explode(';',$line));
+}
+
+echo "</table></div></div><br>";
+
+fclose($file);
+echo "<center><button><a class='down' href='workshop-upc.csv' download>Download</a></button></center>";
+
+?>
