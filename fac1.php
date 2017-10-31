@@ -98,7 +98,7 @@ div {
 
 
     <label>Date</label>
-    <input type="date" name="d1" required>
+    <input type="date" name="d1" required min="<?php echo date('Y-m-d');?>">
     <label>From</label>
     <input type="time" name="tt1" required>
     <label>To</label>

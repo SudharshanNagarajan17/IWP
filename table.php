@@ -59,7 +59,16 @@
 </nav>
 
 <style>
-
+    .navbar-inverse .navbar-nav .open .dropdown-menu .navbar-inverse .navbar-nav .open .dropdown-menu {
+        background-color: #333333;
+        color:#ffffff;
+    }
+    .drdn:hover .dropdown-menu {
+        display: block;
+    }
+    .drdn hover .sel{
+    background-color: #3e8e41;
+    }
     table.table1{
         border-collapse: collapse;
         width: 100%;
