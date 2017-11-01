@@ -133,7 +133,7 @@ echo "
 	<td rowspan='1' colspan='2' bgcolor='#C3C4C2'><b>WEDNESDAY</b></td>
 	<td colspan='2'><b>".$row['l13']."</b></td>
 	<td colspan='1'></td>
-	<td colspan='3' bgcolor='#C3C4C2'><b>Extramural</b></td>
+	<td colspan='3'><b>Extramural</b></td>
 	<td colspan='2'><b>".$row['l43']."</b></td>
 	<td colspan='2'><b>".$row['l45']."</b></td>
 	<td colspan='2'><b>".$row['l47']."</b></td>

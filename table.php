@@ -17,7 +17,7 @@
     </script>
 </head>
 <body>
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-inverse navbar-static-top">
         <div class="container-fluid">
 
             <div class="navbar-header">
@@ -333,10 +333,10 @@
                     </tr>
                 </table>
             </a></td>
-        <td colspan="3" bgcolor="#C3C4C2">
+        <td colspan="3">
         	<table class="exthr">
         		<tr colspan="3" >
-            		<td rowspan="2" bgcolor="#C3C4C2"><b>Extramural</b></td>
+            		<td rowspan="2"><b>Extramural</b></td>
             	</tr>
             </table>
         </td>

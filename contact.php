@@ -9,7 +9,7 @@ include "navbar.php";
         width: 100%;
 	}
 </style>
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-inverse navbar-static-top">
         <div class="container-fluid">
 
             <div class="navbar-header">

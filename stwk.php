@@ -32,7 +32,7 @@ include "navbar.php";
 	}
 </style>
 <body>
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-inverse navbar-static-top">
         <div class="container-fluid">
 
             <div class="navbar-header">

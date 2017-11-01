@@ -4,7 +4,7 @@ function openCon()
 {
 	$dbhost="localhost";
 	$dbuser="root";
-	$dbpass="mysql";
+	$dbpass="";
 	$db="iwp";
 	
 	$conn=mysqli_connect($dbhost,$dbuser,$dbpass,$db);
