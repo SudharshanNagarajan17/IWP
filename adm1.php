@@ -103,6 +103,9 @@ include 'navbar.php';
 	form{
 		margin-left: 75px;
 	}
+	.navbar-nav .active a{
+      background: #999999 !important;
+ }
 </style>
 <body>
 <nav class="navbar navbar-inverse navbar-static-top">
@@ -133,7 +136,7 @@ include 'navbar.php';
                         <ul class="dropdown-menu">
                             <li class="sel"><a href="stwk.php">View</a></li>
                             <li class="sel"><a href="facwk.php">Faculty Login</a></li>
-                            <li class="sel"><a href="admwk.php">Admin Login</a></li>
+                            <li class="active" class="sel"><a href="admwk.php">Admin Login</a></li>
                         </ul>
                     </li>
                     <li><a href="http://moodlecc.vit.ac.in">Moodle</a></li>
