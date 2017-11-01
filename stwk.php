@@ -58,7 +58,7 @@ include "navbar.php";
                     <li class="drdn">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Workshops <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li class="active" class="sel"><a href="stwk.php">View</a></li>
+                            <li class="sel"><a href="stwk.php">View</a></li>
                             <li class="sel"><a href="facwk.php">Faculty Login</a></li>
                             <li class="sel"><a href="admwk.php">Admin Login</a></li>
                         </ul>
