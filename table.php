@@ -101,6 +101,18 @@
         width: 5%;
         text-align: center;
     }
+    .table2 td:hover{
+        background-color: #ffe699;
+    }
+    .exthr{
+        border:1px solid black;
+        table-layout: fixed;
+        margin: auto;
+        border:none;
+        border-collapse: collapse;
+        border-style: hidden;
+        width:95%;
+    }
     table.table2{
     	border:1px solid black;
         table-layout: fixed;
@@ -113,6 +125,7 @@
     table.table2 tr{
         text-align: center;
         padding: 0;
+        background-color: #FDFFCE;
     }
 
     a:link {
@@ -125,7 +138,6 @@
     }
     a:hover {
         text-decoration: none;
-        background-color: #ccffff;
         display: block;
     }
 
@@ -149,21 +161,21 @@
 <div class="table-responsive">
 <table align="center" class="table1" id="t1">
 
-    <tr>
-        <th rowspan="2">Theory</th><th>Start</th><th>08:00</th><th>09:00</th><th>10:00</th><th>11:00</th><th>12:00</th><th></th><th rowspan="9">LUNCH</th><th>14:00</th><th>15:00</th><th>16:00</th><th>17:00</th><th>18:00</th><th></th>
+    <tr bgcolor="#CECCFD">
+        <th rowspan="2" bgcolor="#C3C4C2">Theory</th><th  bgcolor="#C3C4C2">Start</th><th>08:00</th><th>09:00</th><th>10:00</th><th>11:00</th><th>12:00</th><th></th><th rowspan="9" bgcolor="#C3C4C2">LUNCH</th><th>14:00</th><th>15:00</th><th>16:00</th><th>17:00</th><th>18:00</th><th></th>
     </tr>
-    <tr bgcolor="#e0e0d1">
-        <th>End</th><th>08:50</th><th>09:50</th><th>10:50</th><th>11:50</th><th>12:50</th><th></th><th>14:50</th><th>15:50</th><th>16:50</th><th>17:50</th><th>18:50</th><th></th>
+    <tr bgcolor="#CECCFD">
+        <th bgcolor="#C3C4C2">End</th><th>08:50</th><th>09:50</th><th>10:50</th><th>11:50</th><th>12:50</th><th></th><th>14:50</th><th>15:50</th><th>16:50</th><th>17:50</th><th>18:50</th><th></th>
     </tr>
-    <tr>
-        <th rowspan="2">Lab</th><th>Start</th><th>08:00</th><th>-</th><th>10:00</th><th>-</th><th>11:50</th><th>-</th><th>14:00</th><th>-</th><th>16:00</th><th>-</th><th>17:50</th><th>-</th>
+    <tr  bgcolor="#9DD2FF">
+        <th rowspan="2"  bgcolor="#C3C4C2">Lab</th><th bgcolor="#C3C4C2">Start</th><th>08:00</th><th>-</th><th>10:00</th><th>-</th><th>11:50</th><th>-</th><th>14:00</th><th>-</th><th>16:00</th><th>-</th><th>17:50</th><th>-</th>
     </tr>
-    <tr bgcolor="#e0e0d1">
-        <th>End</th><th>-</th><th>09:40</th><th>-</th><th>11:40</th><th>-</th><th>13:30</th><th>-</th><th>15:40</th><th>-</th><th>17:40</th><th>-</th><th>19:30</th>
+    <tr bgcolor="#9DD2FF">
+        <th bgcolor="#C3C4C2">End</th><th>-</th><th>09:40</th><th>-</th><th>11:40</th><th>-</th><th>13:30</th><th>-</th><th>15:40</th><th>-</th><th>17:40</th><th>-</th><th>19:30</th>
     </tr>
-    <tr>
+    <tr bgcolor="#FDFFCE">
 
-        <td colspan="2"><b>MONDAY</b></td>
+        <td colspan="2" bgcolor="#C3C4C2"><b>MONDAY</b></td>
         <td colspan="2"><a href="1.php?ls=l1" target="if1">
                 <table class="table2">
                     <tr>
@@ -230,8 +242,8 @@
 
     </tr>
 
-    <tr bgcolor="#e0e0d1">
-        <td rowspan="1" colspan="2"><b>TUESDAY</b></td>
+    <tr bgcolor="#FDFFCE">
+        <td rowspan="1" colspan="2" bgcolor="#C3C4C2"><b>TUESDAY</b></td>
         <td colspan="2"><a href="1.php?ls=l7" target="if1">
                 <table class="table2">
                     <tr>
@@ -298,8 +310,8 @@
             </a></td>
     </tr>
 
-    <tr>
-        <td rowspan="1" colspan="2"><b>WEDNESDAY</b></td>
+    <tr bgcolor="#FDFFCE">
+        <td rowspan="1" colspan="2" bgcolor="#C3C4C2"><b>WEDNESDAY</b></td>
         <td colspan="2"><a href="1.php?ls=l13" target="if1">
                 <table class="table2">
                     <tr>
@@ -321,10 +333,10 @@
                     </tr>
                 </table>
             </a></td>
-        <td colspan="3">
-        	<table class="table2">
-        		<tr colspan="3">
-            		<td rowspan="2"><b>Extramural</b></td>
+        <td colspan="3" bgcolor="#C3C4C2">
+        	<table class="exthr">
+        		<tr colspan="3" >
+            		<td rowspan="2" bgcolor="#C3C4C2"><b>Extramural</b></td>
             	</tr>
             </table>
         </td>
@@ -362,8 +374,8 @@
             </a></td>
     </tr>
 
-    <tr bgcolor="#e0e0d1">
-        <td rowspan="1" colspan="2"><b>THURDAY</b></td>
+    <tr bgcolor="#FDFFCE">
+        <td rowspan="1" colspan="2" bgcolor="#C3C4C2"><b>THURDAY</b></td>
         <td colspan="2"><a href="1.php?ls=l19" target="if1">
                 <table class="table2">
                     <tr>
@@ -431,8 +443,8 @@
             </a></td>
     </tr>
 
-    <tr>
-        <td rowspan="1" colspan="2"><b>FRIDAY</b></td>
+    <tr bgcolor="#FDFFCE">
+        <td rowspan="1" colspan="2" bgcolor="#C3C4C2"><b>FRIDAY</b></td>
         <td colspan="2"><a href="1.php?ls=l25" target="if1">
                 <table class="table2">
                     <tr>

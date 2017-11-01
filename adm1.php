@@ -3,11 +3,15 @@ error_reporting(0);
 $username="admin";
 $password="admin";
 
+$flag=0;
+
 $u=$_POST['t1'];
 $p=$_POST['t2'];
 
 if(strcmp($username,$u)!=0 || strcmp($password,$p)!=0)
 	echo "<script>alert('Invalid Credentials');window.open(window.history.back(),'_self');</script>";
+else
+	$flag=1;
 
 include 'navbar.php';
 
@@ -19,20 +23,26 @@ include 'navbar.php';
 <head>
 	<title></title>
 </head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <style type="text/css">
-	td{
+	.tab td{
 		text-align: center;
 	}
-	th{
+	.tab th{
 		background-color: blue;
 		color: white;
 		text-align: center;
 		min-width: 100px;
 	}
-	tr:nth-child(even){
+	.tab tr:nth-child(even){
 		background-color: #e6e6e6;
 	}
-	table{
+	.tab{
 		cursor: default;
 		white-space: nowrap;
 		width: 100%;
@@ -139,6 +149,8 @@ include 'navbar.php';
 </html>
 
 <?php
+
+if($flag==1)	{
 include 'link.php';
 
 $conn=openCon();
@@ -159,7 +171,7 @@ $list[$k++]= ";;;;;";
 echo "<h3>Date Wise</h3>";
 echo "<div class='container'>
 		<div class='table-responsive'>
-		<table>
+		<table class='tab'>
 		<tr><th>Date</th><th>From</th><th>To</th><th>Lab Number</th><th>Workshop Details</th><th>Faculty Name</th>";
 while($m=mysqli_fetch_array($result))
 {
@@ -193,7 +205,7 @@ $list[$k++]= ";;;;;";
 echo "<h3>Lab Wise</h3>";
 echo "<div class='container'>
 		<div class='table-responsive'>
-		<table>
+		<table class='tab'>
 		<tr><th>Lab Number</th><th>Workshop Details</th><th>Faculty Name</th><th>Date</th><th>From</th><th>To</th>";
 while($m=mysqli_fetch_array($result))
 {
@@ -230,9 +242,11 @@ echo "<h3>Report</h3>";
 <html>
 <body>
 	<form action="adm2.php" method="post" target="_blank">
-		<label>From:</label><br><input type="date" name="d1" required>
-		<br><label>To:</label><br><input type="date" name="d2" required>
-		<br><input style="margin-left: 70px" type="submit" value="Download">
+		<label>From:</label><br>
+		<input type='text' name='d1' required id='datepicker1' placeholder='yyyy-mm-dd'>
+		<br><br><label>To:</label><br>
+		<input type='text' name='d2' required id='datepicker2' placeholder='yyyy-mm-dd'>
+		<br><br><input style="margin-left: 40px" type="submit" value="Download">
 	</form>
 </body>
 </html>
@@ -255,7 +269,7 @@ $list[$k++]= ";;;;;";
 echo "<br><br><h3>Completed Workshops</h3>";
 echo "<div class='container'>
 		<div class='table-responsive'>
-		<table>
+		<table class='tab'>
 		<tr><th>Date</th><th>Workshop Details</th><th>Faculty Name</th><th>Lab Number</th><th>From</th><th>To</th></tr>";
 while($m=mysqli_fetch_array($result))
 {
@@ -287,7 +301,7 @@ $list[$k++]= ";;;;;";
 echo "<h3>Upcoming Workshops</h3>";
 echo "<div class='container'>
 		<div class='table-responsive'>
-		<table>
+		<table class='tab'>
 		<tr><th>Date</th><th>Workshop Details</th><th>Faculty Name</th><th>Lab Number</th><th>From</th><th>To</th></tr>";
 while($m=mysqli_fetch_array($result))
 {
@@ -305,5 +319,21 @@ echo "</table></div></div><br>";
 
 fclose($file);
 echo "<center><button><a class='down' href='workshop-upc.csv' download>Download</a></button></center>";
-
+}
 ?>
+
+<script>
+	$( function() {
+    $( "#datepicker1" ).datepicker({
+      changeMonth: true,
+      changeYear: true,
+      dateFormat: 'yy-mm-dd'
+    });
+    $( "#datepicker2" ).datepicker({
+      changeMonth: true,
+      changeYear: true,
+      
+      dateFormat: 'yy-mm-dd'
+    });
+  } );
+</script>

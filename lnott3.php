@@ -96,67 +96,67 @@ echo "
 <div class='table-responsive'>
 <table class='table4' align='center' height=60%>
 
-<tr>
-<th rowspan='2'>Theory</th><th>Start</th><th>08:00</th><th>09:00</th><th>10:00</th><th>11:00</th><th>12:00</th><th></th><th rowspan='14'>Lunch</th><th>14:00</th><th>15:00</th><th>16:00</th><th>17:00</th><th>18:00</th><th></th>
+<tr bgcolor='#CECCFD'>
+<th rowspan='2' bgcolor='#C3C4C2'>Theory</th><th bgcolor='#C3C4C2'>Start</th><th>08:00</th><th>09:00</th><th>10:00</th><th>11:00</th><th>12:00</th><th></th><th rowspan='14' bgcolor='#C3C4C2'>Lunch</th><th>14:00</th><th>15:00</th><th>16:00</th><th>17:00</th><th>18:00</th><th></th>
 </tr>
-<tr bgcolor='#e0e0d1'>
-<th>End</th><th>08:50</th><th>09:50</th><th>10:50</th><th>11:50</th><th>12:50</th><th></th><th>14:50</th><th>15:50</th><th>16:50</th><th>17:50</th><th>18:50</th><th></th>
+<tr bgcolor='#CECCFD'>
+<th bgcolor='#C3C4C2'>End</th><th>08:50</th><th>09:50</th><th>10:50</th><th>11:50</th><th>12:50</th><th></th><th>14:50</th><th>15:50</th><th>16:50</th><th>17:50</th><th>18:50</th><th></th>
 </tr>
-<tr>
-<th rowspan='2'>Lab</th><th>Start</th><th>08:00</th><th>-</th><th>10:00</th><th>-</th><th>11:50</th><th>-</th><th>14:00</th><th>-</th><th>16:00</th><th>-</th><th>17:50</th><th>-</th>
+<tr bgcolor='#9DD2FF'>
+<th rowspan='2' bgcolor='#C3C4C2'>Lab</th><th bgcolor='#C3C4C2'>Start</th><th>08:00</th><th>-</th><th>10:00</th><th>-</th><th>11:50</th><th>-</th><th>14:00</th><th>-</th><th>16:00</th><th>-</th><th>17:50</th><th>-</th>
 </tr>
-<tr bgcolor='#e0e0d1'>
-<th>End</th><th>-</th><th>09:40</th><th>-</th><th>11:40</th><th>-</th><th>13:30</th><th>-</th><th>15:40</th><th>-</th><th>17:40</th><th>-</th><th>19:30</th>
-</tr>
-
-<tr>
-	<td rowspan='1' colspan='2'><b>MONDAY</b></td>
-	<td colspan='2'>".$row['l1']."</td>
-	<td colspan='2'>".$row['l3']."</td>
-	<td colspan='2'>".$row['l5']."</td>
-	<td colspan='2'>".$row['l31']."</td>
-	<td colspan='2'>".$row['l33']."</td>
-	<td colspan='2'>".$row['l35']."</td>	
+<tr bgcolor='#9DD2FF'>
+<th bgcolor='#C3C4C2'>End</th><th>-</th><th>09:40</th><th>-</th><th>11:40</th><th>-</th><th>13:30</th><th>-</th><th>15:40</th><th>-</th><th>17:40</th><th>-</th><th>19:30</th>
 </tr>
 
-<tr bgcolor='#e0e0d1'>
-	<td rowspan='1' colspan='2'><b>TUESDAY</b></td>
-	<td colspan='2'>".$row['l7']."</td>
-	<td colspan='2'>".$row['l9']."</td>
-	<td colspan='2'>".$row['l11']."</td>
-	<td colspan='2'>".$row['l37']."</td>
-	<td colspan='2'>".$row['l39']."</td>
-	<td colspan='2'>".$row['l41']."</td>
+<tr bgcolor='#FDFFCE'>
+	<td rowspan='1' colspan='2' bgcolor='#C3C4C2'><b>MONDAY</b></td>
+	<td colspan='2'><b>".$row['l1']."</b></td>
+	<td colspan='2'><b>".$row['l3']."</b></td>
+	<td colspan='2'><b>".$row['l5']."</b></td>
+	<td colspan='2'><b>".$row['l31']."</b></td>
+	<td colspan='2'><b>".$row['l33']."</b></td>
+	<td colspan='2'><b>".$row['l35']."</b></td>	
 </tr>
 
-<tr>
-	<td rowspan='1' colspan='2'><b>WEDNESDAY</b></td>
-	<td colspan='2'>".$row['l13']."</td>
+<tr bgcolor='#FDFFCE'>
+	<td rowspan='1' colspan='2' bgcolor='#C3C4C2'><b>TUESDAY</b></td>
+	<td colspan='2'><b>".$row['l7']."</b></td>
+	<td colspan='2'><b>".$row['l9']."</b></td>
+	<td colspan='2'><b>".$row['l11']."</b></td>
+	<td colspan='2'><b>".$row['l37']."</b></td>
+	<td colspan='2'><b>".$row['l39']."</b></td>
+	<td colspan='2'><b>".$row['l41']."</b></td>
+</tr>
+
+<tr bgcolor='#FDFFCE'>
+	<td rowspan='1' colspan='2' bgcolor='#C3C4C2'><b>WEDNESDAY</b></td>
+	<td colspan='2'><b>".$row['l13']."</b></td>
 	<td colspan='1'></td>
-	<td colspan='3'><b>Extramural</b></td>
-	<td colspan='2'>".$row['l43']."</td>
-	<td colspan='2'>".$row['l45']."</td>
-	<td colspan='2'>".$row['l47']."</td>
+	<td colspan='3' bgcolor='#C3C4C2'><b>Extramural</b></td>
+	<td colspan='2'><b>".$row['l43']."</b></td>
+	<td colspan='2'><b>".$row['l45']."</b></td>
+	<td colspan='2'><b>".$row['l47']."</b></td>
 </tr>
 
-<tr bgcolor='#e0e0d1'>
-	<td rowspan='1' colspan='2'><b>THURSDAY</b></td>
-	<td colspan='2'>".$row['l19']."</td>
-	<td colspan='2'>".$row['l21']."</td>
-	<td colspan='2'>".$row['l23']."</td>
-	<td colspan='2'>".$row['l49']."</td>
-	<td colspan='2'>".$row['l51']."</td>
-	<td colspan='2'>".$row['l53']."</td>
+<tr bgcolor='#FDFFCE'>
+	<td rowspan='1' colspan='2' bgcolor='#C3C4C2'><b>THURSDAY</b></td>
+	<td colspan='2'><b>".$row['l19']."</b></td>
+	<td colspan='2'><b>".$row['l21']."</b></td>
+	<td colspan='2'><b>".$row['l23']."</b></td>
+	<td colspan='2'><b>".$row['l49']."</b></td>
+	<td colspan='2'><b>".$row['l51']."</b></td>
+	<td colspan='2'><b>".$row['l53']."</b></td>
 </tr>
 
-<tr>
-	<td rowspan='1' colspan='2'><b>FRIDAY</b></td>
-	<td colspan='2'>".$row['l25']."</td>
-	<td colspan='2'>".$row['l27']."</td>
-	<td colspan='2'>".$row['l29']."</td>
-	<td colspan='2'>".$row['l55']."</td>
-	<td colspan='2'>".$row['l57']."</td>
-	<td colspan='2'>".$row['l59']."</td>
+<tr bgcolor='#FDFFCE'>
+	<td rowspan='1' colspan='2' bgcolor='#C3C4C2'><b>FRIDAY</b></td>
+	<td colspan='2'><b>".$row['l25']."</b></td>
+	<td colspan='2'><b>".$row['l27']."</b></td>
+	<td colspan='2'><b>".$row['l29']."</b></td>
+	<td colspan='2'><b>".$row['l55']."</b></td>
+	<td colspan='2'><b>".$row['l57']."</b></td>
+	<td colspan='2'><b>".$row['l59']."</b></td>
 </tr>
 
 </table></div></div>
