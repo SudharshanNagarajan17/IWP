@@ -2,8 +2,8 @@
 error_reporting(0);
 include "navbar.php";
 
-
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -77,7 +77,7 @@ include "navbar.php";
 
 <?php
 
-include 'link.php';
+include 'cur.php';
 
 $conn=openCon();
 
