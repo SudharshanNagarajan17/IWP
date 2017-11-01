@@ -9,7 +9,74 @@ $f=$_POST['t2'];
 
 
 $qwe=1;
-if($e<=$d)
+
+if(strlen($e)!=5 || strlen($d)!=5)
+{
+	echo "<script>alert('Invalid Timings. Enter the time in 24 hr format (HH:MM)');</script>";
+	$qwe=0;
+}
+
+
+else if(!($e[0]=='0' || $e[0]=='1' || $e[0]=='2') && ($d[0]=='0' || $d[0]=='1' || $d[0]=='2'))
+{
+	echo "<script>alert('Invalid Timings. Enter the time in 24 hr format (HH:MM)');</script>";
+	$qwe=0;
+}
+
+else if(($e[0]=='0' || $e[0]=='1') && strpos("0123456789",$e[1])=='')
+{
+	echo "<script>alert('Invalid Timings. Enter the time in 24 hr format (HH:MM)');</script>";
+	$qwe=0;
+}
+else if(($d[0]=='0' || $d[0]=='1') && strpos("0123456789",$d[1])=='')
+{
+	echo "<script>alert('Invalid Timings. Enter the time in 24 hr format (HH:MM)');</script>";
+	$qwe=0;
+}
+else if($e[0]=='2' && strpos("0123",$e[1])=='')
+{
+	echo "<script>alert('Invalid Timings. Enter the time in 24 hr format (HH:MM)');</script>";
+	$qwe=0;
+}
+else if($d[0]=='2' && strpos("0123",$d[1])=='')
+{
+	echo "<script>alert('Invalid Timings. Enter the time in 24 hr format (HH:MM)');</script>";
+	$qwe=0;
+}
+
+else if($e[2]!=':' || $d[2]!=':')
+{
+	echo "<script>alert('Invalid Timings. Enter the time in 24 hr format (HH:MM)');</script>";
+	$qwe=0;
+}
+
+
+else if(!($e[3]=='0' || $e[3]=='1' || $e[3]=='2' || $e[3]=='3' || $e[3]=='4' || $e[3]=='5'))
+{
+	echo "<script>alert('Invalid Timings. Enter the time in 24 hr format (HH:MM)');</script>";
+	$qwe=0;
+}
+else if(!($d[3]=='0' || $d[3]=='1' || $d[3]=='2' || $d[3]=='3' || $d[3]=='4' || $d[3]=='5'))
+{
+	echo "<script>alert('Invalid Timings. Enter the time in 24 hr format (HH:MM)');</script>";
+	$qwe=0;
+}
+
+
+else if(strpos("0123456789",$e[4])=='' && $e[4]!='0')
+{
+	echo "<script>alert('Invalid Timings. Enter the time in 24 hr format (HH:MM)');</script>";
+	$qwe=0;
+}
+
+else if(strpos("0123456789",$d[4])=='' && $d[4]!='0')
+{
+	echo "<script>alert('Invalid Timings. Enter the time in 24 hr format (HH:MM)');</script>";
+	$qwe=0;
+}
+
+
+else if($e<=$d)
 {
 	echo "<script>alert('Incorrect Timings');</script>";
 	$qwe=0;

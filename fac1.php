@@ -116,9 +116,9 @@ label{
     <label>Date</label>
     <input type='text' name='d1' required id='datepicker' placeholder='yyyy-mm-dd'>
     <label>From</label>
-    <input type="time" name="tt1" required>
+    <input type="time" name="tt1" value="09:00" required>
     <label>To</label>
-    <input type="time" name="tt2" required>
+    <input type="time" name="tt2" value="16:00" required>
     <label>Workshop Details</label>
     <input type="text" id="lname" name="t2" required placeholder="Enter the workshop details">
 
