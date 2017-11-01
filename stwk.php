@@ -58,7 +58,7 @@ include "navbar.php";
                     <li class="drdn">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Workshops <span class="caret"></span></a>
                         <ul class="dropdown-menu">
-                            <li   class="active" class="sel"><a href="stwk.php">View</a></li>
+                            <li class="active" class="sel"><a href="stwk.php">View</a></li>
                             <li class="sel"><a href="facwk.php">Faculty Login</a></li>
                             <li class="sel"><a href="admwk.php">Admin Login</a></li>
                         </ul>
@@ -77,9 +77,17 @@ include "navbar.php";
 
 <?php
 
-include 'cur.php';
-
+include 'link.php';
 $conn=openCon();
+
+$sd=(string)date('Y-m-d');
+
+$a = "SELECT COUNT(*) FROM workshop WHERE dat='$sd'";
+$result=mysqli_query($conn,$a);
+$m=mysqli_fetch_array($result);
+
+if($m[0]>0)
+    include 'cur.php';
 
 $a = "SELECT * FROM workshop ORDER BY dat,tfr,no";
 

@@ -1,23 +1,23 @@
 <style>
 	.curdisp{
 		color: red;
-		font-style: italic;
+		font-size: 17px;
+		font-weight: bold;
+		font-family: "Times New Roman", Times, serif;
+		margin-left: 5%;
 	}
 
 </style>
 
 <?php
 
-include 'link.php';
-
-$conn=openCon();
-
 $sd=(string)date('Y-m-d');
 
 $a = "SELECT * FROM workshop WHERE dat='$sd' ORDER BY tfr,no";
 
 $result=mysqli_query($conn,$a);
-echo "<h3>Workshops taking place:</h3>";
+
+echo "<h3>Workshops Taking Place</h3>";
 
 while($m=mysqli_fetch_array($result))
 {
