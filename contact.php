@@ -23,7 +23,7 @@ include "navbar.php";
 
             <div class="collapse navbar-collapse" id="mainNavBar">
                 <ul class="nav navbar-nav">
-                    <li><a href="table.php">Search by slot</a></li>
+                    <li><a href="index.php">Search by slot</a></li>
                     <li><a href="dropdown.php">Search by lab number</a></li>
                     <li class="drdn">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">FFCS <span class="caret"></span></a>

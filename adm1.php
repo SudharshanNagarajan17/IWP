@@ -1,14 +1,14 @@
 <?php
 error_reporting(0);
-$username="admin";
-$password="admin";
+
+include 'passwords.php';
 
 $flag=0;
 
 $u=$_POST['t1'];
 $p=$_POST['t2'];
 
-if(strcmp($username,$u)!=0 || strcmp($password,$p)!=0)
+if(strcmp($admin_username,$u)!=0 || strcmp($admin_password,$p)!=0)
 	echo "<script>alert('Invalid Credentials');window.open(window.history.back(),'_self');</script>";
 else
 	$flag=1;
@@ -122,7 +122,7 @@ include 'navbar.php';
 
             <div class="collapse navbar-collapse" id="mainNavBar">
                 <ul class="nav navbar-nav">
-                    <li><a href="table.php">Search by slot</a></li>
+                    <li><a href="index.php">Search by slot</a></li>
                     <li><a href="dropdown.php">Search by lab number</a></li>
                     <li class="drdn">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">FFCS <span class="caret"></span></a>

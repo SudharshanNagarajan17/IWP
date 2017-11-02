@@ -1,14 +1,13 @@
 <?php
 
-$username="faculty";
-$password="faculty";
+include 'passwords.php';
 
 $flag=0;
 
 $u=$_POST['t1'];
 $p=$_POST['t2'];
 
-if(strcmp($username,$u)!=0 || strcmp($password,$p)!=0)
+if(strcmp($faculty_username,$u)!=0 || strcmp($faculty_password,$p)!=0)
 	echo "<script>alert('Invalid Credentials');window.open(window.history.back(),'_self');</script>";
 else
   $flag=1;

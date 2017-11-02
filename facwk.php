@@ -141,7 +141,7 @@ var modal = document.getElementById('id01');
 window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
-        window.open("table.php","_self");
+        window.open("index.php","_self");
     }
 }
 
