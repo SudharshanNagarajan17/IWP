@@ -97,16 +97,16 @@ echo "
 <table class='table4' align='center' height=60%>
 
 <tr bgcolor='#CECCFD'>
-<th rowspan='2' bgcolor='#C3C4C2'>Theory</th><th bgcolor='#C3C4C2'>Start</th><th>08:00</th><th>09:00</th><th>10:00</th><th>11:00</th><th>12:00</th><th></th><th rowspan='14' bgcolor='#C3C4C2'>Lunch</th><th>14:00</th><th>15:00</th><th>16:00</th><th>17:00</th><th>18:00</th><th></th>
+<th rowspan='2' bgcolor='#C3C4C2'>Theory</th><th bgcolor='#C3C4C2'>Start</th><th>08:00</th><th>08:55</th><th>09:50</th><th>10:45</th><th>11:40</th><th></th><th rowspan='14' bgcolor='#C3C4C2'>Lunch</th><th>14:00</th><th>14:55</th><th>15:50</th><th>16:45</th><th>17:40</th><th>-</th>
 </tr>
 <tr bgcolor='#CECCFD'>
-<th bgcolor='#C3C4C2'>End</th><th>08:50</th><th>09:50</th><th>10:50</th><th>11:50</th><th>12:50</th><th></th><th>14:50</th><th>15:50</th><th>16:50</th><th>17:50</th><th>18:50</th><th></th>
+<th bgcolor='#C3C4C2'>End</th><th>08:50</th><th>09:45</th><th>10:40</th><th>11:35</th><th>12:30</th><th></th><th>14:50</th><th>15:45</th><th>16:40</th><th>17:35</th><th>18:30</th><th></th>
 </tr>
 <tr bgcolor='#9DD2FF'>
-<th rowspan='2' bgcolor='#C3C4C2'>Lab</th><th bgcolor='#C3C4C2'>Start</th><th>08:00</th><th>-</th><th>10:00</th><th>-</th><th>11:50</th><th>-</th><th>14:00</th><th>-</th><th>16:00</th><th>-</th><th>17:50</th><th>-</th>
+<th rowspan='2' bgcolor='#C3C4C2'>Lab</th><th bgcolor='#C3C4C2'>Start</th><th>08:00</th><th>-</th><th>09:50</th><th>-</th><th>11:40</th><th>-</th><th>14:00</th><th>-</th><th>15:50</th><th>-</th><th>17:40</th><th>-</th>
 </tr>
 <tr bgcolor='#9DD2FF'>
-<th bgcolor='#C3C4C2'>End</th><th>-</th><th>09:40</th><th>-</th><th>11:40</th><th>-</th><th>13:30</th><th>-</th><th>15:40</th><th>-</th><th>17:40</th><th>-</th><th>19:30</th>
+<th bgcolor='#C3C4C2'>End</th><th>-</th><th>09:40</th><th>-</th><th>11:30</th><th>-</th><th>13:20</th><th>-</th><th>15:40</th><th>-</th><th>17:30</th><th>-</th><th>19:20</th>
 </tr>
 
 <tr bgcolor='#FDFFCE'>

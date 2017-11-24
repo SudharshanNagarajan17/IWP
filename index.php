@@ -81,7 +81,7 @@ session_start();
         cursor: default;
     }
     table.table1 th{
-    	text-align: center;
+        text-align: center;
         border:1px solid black;
         height:20px;
         width: 5%;
@@ -100,6 +100,7 @@ session_start();
 
     table.table2 td{
         border-left: 1px solid black;
+        border-bottom: 1px solid black;
         height: 20px;
         width: 5%;
         text-align: center;
@@ -117,18 +118,38 @@ session_start();
         width:95%;
     }
     table.table2{
-    	border:1px solid black;
+        border:1px solid black;
         table-layout: fixed;
         margin: auto;
         border:none;
         border-collapse: collapse;
         border-style: hidden;
-        width:95%;
+        width:100%;
     }
     table.table2 tr{
         text-align: center;
         padding: 0;
         background-color: #FDFFCE;
+    }
+
+    table.table3 td{
+        border-left: 1px solid black;
+        height: 20px;
+        width: 5%;
+        text-align: center;
+    }
+    table.table3{
+        border:1px solid black;
+        table-layout: fixed;
+        margin: auto;
+        border:none;
+        border-collapse: collapse;
+        border-style: hidden;
+        width:100%;
+    }
+    table.table3 tr{
+        text-align: center;
+        padding: 0;
     }
 
     a:link {
@@ -165,17 +186,153 @@ session_start();
 <table align="center" class="table1" id="t1">
 
     <tr bgcolor="#CECCFD">
-        <th rowspan="2" bgcolor="#C3C4C2">Theory</th><th  bgcolor="#C3C4C2">Start</th><th>08:00</th><th>09:00</th><th>10:00</th><th>11:00</th><th>12:00</th><th></th><th rowspan="9" bgcolor="#C3C4C2">LUNCH</th><th>14:00</th><th>15:00</th><th>16:00</th><th>17:00</th><th>18:00</th><th></th>
+        <td colspan="2">
+            <table class="table3">
+                <tr>
+                    <th rowspan="2" bgcolor="#C3C4C2">Theory</th><th bgcolor="#C3C4C2">Start</th>
+                </tr>
+                <tr>
+                    <th bgcolor="#C3C4C2">End</th>
+                </tr>
+            </table>
+        </td>
+        <td colspan="2">
+            <table class="table3">
+                <tr>
+                    <th>08:00</th><th>08:55</th>
+                </tr>
+                <tr>
+                    <th>08:50</th><th>09:45</th>
+                </tr>
+            </table>
+        </td>
+        <td colspan="2">
+            <table class="table3">
+                <tr>
+                    <th>09:50</th><th>10:45</th>
+                </tr>
+                <tr>
+                    <th>10:40</th><th>11:35</th>
+                </tr>
+            </table>
+        </td>
+        <td colspan="2">
+            <table class="table3">
+                <tr>
+                    <th>11:40</th><th></th>
+                </tr>
+                <tr>
+                    <th>12:30</th><th></th>
+                </tr>
+            </table>
+        </td>
+
+        <th rowspan="9" class="table3" style="width: 1%;">LUNCH</th>    
+        <td colspan="2">
+            <table class="table3">
+                <tr>
+                    <th>14:00</th><th>14:55</th>
+                </tr>
+                <tr>
+                    <th>14:50</th><th>15:45</th>
+                </tr>
+            </table>
+        </td>
+        <td colspan="2">
+            <table class="table3">
+                <tr>
+                    <th>15:50</th><th>16:45</th>
+                </tr>
+                <tr>
+                    <th>16:40</th><th>17:35</th>
+                </tr>
+            </table>
+        </td>
+        <td colspan="2">
+            <table class="table3">
+                <tr>
+                    <th>17:40</th><th></th>
+                </tr>
+                <tr>
+                    <th>18:30</th><th></th>
+                </tr>
+            </table>
+        </td>
     </tr>
-    <tr bgcolor="#CECCFD">
-        <th bgcolor="#C3C4C2">End</th><th>08:50</th><th>09:50</th><th>10:50</th><th>11:50</th><th>12:50</th><th></th><th>14:50</th><th>15:50</th><th>16:50</th><th>17:50</th><th>18:50</th><th></th>
-    </tr>
-    <tr  bgcolor="#9DD2FF">
-        <th rowspan="2"  bgcolor="#C3C4C2">Lab</th><th bgcolor="#C3C4C2">Start</th><th>08:00</th><th>-</th><th>10:00</th><th>-</th><th>11:50</th><th>-</th><th>14:00</th><th>-</th><th>16:00</th><th>-</th><th>17:50</th><th>-</th>
-    </tr>
+
     <tr bgcolor="#9DD2FF">
-        <th bgcolor="#C3C4C2">End</th><th>-</th><th>09:40</th><th>-</th><th>11:40</th><th>-</th><th>13:30</th><th>-</th><th>15:40</th><th>-</th><th>17:40</th><th>-</th><th>19:30</th>
+        <td colspan="2">
+            <table class="table3">
+                <tr>
+                    <th rowspan="2" bgcolor="#C3C4C2">Lab</th><th bgcolor="#C3C4C2">Start</th>
+                </tr>
+                <tr>
+                    <th bgcolor="#C3C4C2">End</th>
+                </tr>
+            </table>
+        </td>
+        <td colspan="2">
+            <table class="table3">
+                <tr>
+                    <th>08:00</th><th>-</th>
+                </tr>
+                <tr>
+                    <th>-</th><th>09:40</th>
+                </tr>
+            </table>
+        </td>
+        <td colspan="2">
+            <table class="table3">
+                <tr>
+                    <th>09:50</th><th>-</th>
+                </tr>
+                <tr>
+                    <th>-</th><th>11:30</th>
+                </tr>
+            </table>
+        </td>
+        <td colspan="2">
+            <table class="table3">
+                <tr>
+                    <th>11:40</th><th>-</th>
+                </tr>
+                <tr>
+                    <th>-</th><th>13:20</th>
+                </tr>
+            </table>
+        </td>
+        <td colspan="2">
+            <table class="table3">
+                <tr>
+                    <th>14:00</th><th>-</th>
+                </tr>
+                <tr>
+                    <th>-</th><th>15:40</th>
+                </tr>
+            </table>
+        </td>
+        <td colspan="2">
+            <table class="table3">
+                <tr>
+                    <th>15:50</th><th>-</th>
+                </tr>
+                <tr>
+                    <th>-</th><th>17:30</th>
+                </tr>
+            </table>
+        </td>
+        <td colspan="2">
+            <table class="table3">
+                <tr>
+                    <th>17:40</th><th>-</th>
+                </tr>
+                <tr>
+                    <th>-</th><th>19:20</th>
+                </tr>
+            </table>
+        </td>
     </tr>
+
     <tr bgcolor="#FDFFCE">
 
         <td colspan="2" bgcolor="#C3C4C2"><b>MONDAY</b></td>
@@ -337,10 +494,10 @@ session_start();
                 </table>
             </a></td>
         <td colspan="2">
-        	<table class="exthr">
-        		<tr colspan="2">
-            		<td rowspan="2"><b>Extramural</b></td>
-            	</tr>
+            <table class="exthr">
+                <tr colspan="2">
+                    <td rowspan="2"><b>Extramural</b></td>
+                </tr>
             </table>
         </td>
         <td colspan="2"><a href="1.php?ls=l43" target="if1">
