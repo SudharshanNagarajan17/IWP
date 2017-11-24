@@ -187,83 +187,83 @@ session_start();
 <div class="container">
 <div class="table-responsive">
 <table align="center" class="table1" id="t1">
-
+	
     <tr bgcolor="#CECCFD">
         <td colspan="2">
             <table class="table3">
                 <tr>
-                    <th rowspan="2" bgcolor="#C3C4C2">Theory</th><th bgcolor="#C3C4C2">Start</th>
+                    <td rowspan="2" bgcolor="#C3C4C2">Theory</td><td bgcolor="#C3C4C2">Start</td>
                 </tr>
                 <tr>
-                    <th bgcolor="#C3C4C2">End</th>
-                </tr>
-            </table>
-        </td>
-        <td colspan="2">
-            <table class="table3">
-                <tr>
-                    <th>08:00</th><th>08:55</th>
-                </tr>
-                <tr>
-                    <th>08:50</th><th>09:45</th>
+                    <td bgcolor="#C3C4C2">End</td>
                 </tr>
             </table>
         </td>
         <td colspan="2">
             <table class="table3">
                 <tr>
-                    <th>09:50</th><th>10:45</th>
+                    <td>08:00</td><td>08:55</td>
                 </tr>
                 <tr>
-                    <th>10:40</th><th>11:35</th>
+                    <td>08:50</td><td>09:45</td>
                 </tr>
             </table>
         </td>
         <td colspan="2">
             <table class="table3">
                 <tr>
-                    <th>11:40</th><th></th>
+                    <td>09:50</td><td>10:45</td>
                 </tr>
                 <tr>
-                    <th>12:30</th><th></th>
+                    <td>10:40</td><td>11:35</td>
+                </tr>
+            </table>
+        </td>
+        <td colspan="2">
+            <table class="table3">
+                <tr>
+                    <td>11:40</td><td></td>
+                </tr>
+                <tr>
+                    <td>12:30</td><td></td>
                 </tr>
             </table>
         </td>
 
-        <th rowspan="7" style="width: 1%;" bgcolor="#C3C4C2">
+        <td rowspan="7" style="width: 1%;" bgcolor="#C3C4C2">
         	<span>L</span><br>
         	<span>U</span><br>
         	<span>N</span><br>
         	<span>C</span><br>
         	<span>H</span>
-    	</th>    
+    	</td>    
         <td colspan="2">
             <table class="table3">
                 <tr>
-                    <th>14:00</th><th>14:55</th>
+                    <td>14:00</td><td>14:55</td>
                 </tr>
                 <tr>
-                    <th>14:50</th><th>15:45</th>
+                    <td>14:50</td><td>15:45</td>
                 </tr>
             </table>
         </td>
         <td colspan="2">
             <table class="table3">
                 <tr>
-                    <th>15:50</th><th>16:45</th>
+                    <td>15:50</td><td>16:45</td>
                 </tr>
                 <tr>
-                    <th>16:40</th><th>17:35</th>
+                    <td>16:40</td><td>17:35</td>
                 </tr>
             </table>
         </td>
         <td colspan="2">
             <table class="table3">
                 <tr>
-                    <th>17:40</th><th></th>
+                    <td>17:40</td><td></td>
                 </tr>
                 <tr>
-                    <th>18:30</th><th></th>
+                    <td>18:30</td><td></td>
                 </tr>
             </table>
         </td>
@@ -273,70 +273,70 @@ session_start();
         <td colspan="2">
             <table class="table3">
                 <tr>
-                    <th rowspan="2" bgcolor="#C3C4C2">Lab</th><th bgcolor="#C3C4C2">Start</th>
+                    <td rowspan="2" bgcolor="#C3C4C2">Lab</td><td bgcolor="#C3C4C2">Start</td>
                 </tr>
                 <tr>
-                    <th bgcolor="#C3C4C2">End</th>
-                </tr>
-            </table>
-        </td>
-        <td colspan="2">
-            <table class="table3">
-                <tr>
-                    <th>08:00</th><th>-</th>
-                </tr>
-                <tr>
-                    <th>-</th><th>09:40</th>
+                    <td bgcolor="#C3C4C2">End</td>
                 </tr>
             </table>
         </td>
         <td colspan="2">
             <table class="table3">
                 <tr>
-                    <th>09:50</th><th>-</th>
+                    <td>08:00</td><td>-</td>
                 </tr>
                 <tr>
-                    <th>-</th><th>11:30</th>
-                </tr>
-            </table>
-        </td>
-        <td colspan="2">
-            <table class="table3">
-                <tr>
-                    <th>11:40</th><th>-</th>
-                </tr>
-                <tr>
-                    <th>-</th><th>13:20</th>
+                    <td>-</td><td>09:40</td>
                 </tr>
             </table>
         </td>
         <td colspan="2">
             <table class="table3">
                 <tr>
-                    <th>14:00</th><th>-</th>
+                    <td>09:50</td><td>-</td>
                 </tr>
                 <tr>
-                    <th>-</th><th>15:40</th>
-                </tr>
-            </table>
-        </td>
-        <td colspan="2">
-            <table class="table3">
-                <tr>
-                    <th>15:50</th><th>-</th>
-                </tr>
-                <tr>
-                    <th>-</th><th>17:30</th>
+                    <td>-</td><td>11:30</td>
                 </tr>
             </table>
         </td>
         <td colspan="2">
             <table class="table3">
                 <tr>
-                    <th>17:40</th><th>-</th>
+                    <td>11:40</td><td>-</td>
                 </tr>
                 <tr>
-                    <th>-</th><th>19:20</th>
+                    <td>-</td><td>13:20</td>
+                </tr>
+            </table>
+        </td>
+        <td colspan="2">
+            <table class="table3">
+                <tr>
+                    <td>14:00</td><td>-</td>
+                </tr>
+                <tr>
+                    <td>-</td><td>15:40</td>
+                </tr>
+            </table>
+        </td>
+        <td colspan="2">
+            <table class="table3">
+                <tr>
+                    <td>15:50</td><td>-</td>
+                </tr>
+                <tr>
+                    <td>-</td><td>17:30</td>
+                </tr>
+            </table>
+        </td>
+        <td colspan="2">
+            <table class="table3">
+                <tr>
+                    <td>17:40</td><td>-</td>
+                </tr>
+                <tr>
+                    <td>-</td><td>19:20</td>
                 </tr>
             </table>
         </td>
@@ -685,7 +685,7 @@ session_start();
 </div></div>
 
 <div class="wrapper">
-    <iframe name="if1" id="iFr" width="100%" height="380" frameborder="0" scrolling="no"></iframe>
+    <iframe name="if1" id="iFr" width="100%" height="30" frameborder="0" scrolling="no"></iframe>
 </div>
 </body>
 </html>
