@@ -85,11 +85,10 @@ session_start();
         text-align: center;
         border:1px solid black;
         height:20px;
-        width: 5%;
     }
     table.table1 td{
         height:20px;
-        width: 5%;
+        width: 7%;
         text-align: center;
         border:1px solid black;
 
@@ -105,6 +104,9 @@ session_start();
         height: 20px;
         width: 5%;
         text-align: center;
+    }
+    .container{
+    	width: 95%;
     }
     .table2 td:hover{
         background-color: #ffe699;
