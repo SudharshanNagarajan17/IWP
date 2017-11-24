@@ -108,9 +108,9 @@ label{
 
 <h1><center>WORKSHOP DETAILS</center></h1>
 
-<form align="right">
+<form align="right" name="form1" method="post" action="log_out.php">
   <label class="logoutLblPos">
-  <input type="button" onclick="signout()" id="submit2" value="Sign out">
+  <input name="submit2" type="submit" id="submit2" value="Log out">
   </label>
 </form>
 
@@ -157,12 +157,6 @@ label{
 	{
 		window.open("index.php","_self");
 	}
-  function signout()
-  {
-    <?php unset($_SESSION["facpass"]);
-    unset($_SESSION["facuser"]); ?>
-    window.open("index.php","_self");
-  }
 	$( function() {
     $( "#datepicker" ).datepicker({
       changeMonth: true,
