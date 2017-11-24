@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 
 <!DOCTYPE html>
 <html>
@@ -323,19 +326,19 @@
                 </table>
             </a></td>
 
-        <td><a href="1.php?ls=F1" target="if1">
+        <td colspan="2"><a href="1.php?ls=l15" target="if1">
                 <table class="table2">
                     <tr>
-                        <td>F1</td>
+                        <td>F1</td><td>TD1</td>
                     </tr>
                     <tr>
-                        <td>-</td>
+                        <td>L15</td><td>L16</td>
                     </tr>
                 </table>
             </a></td>
-        <td colspan="3">
+        <td colspan="2">
         	<table class="exthr">
-        		<tr colspan="3" >
+        		<tr colspan="2">
             		<td rowspan="2"><b>Extramural</b></td>
             	</tr>
             </table>
@@ -470,7 +473,7 @@
         <td colspan="2"><a href="1.php?ls=l29" target="if1">
                 <table class="table2">
                     <tr>
-                        <td>TD1</td><td></td>
+                        <td>TDD1</td><td></td>
                     </tr>
                     <tr>
                         <td>L29</td><td>L30</td>
