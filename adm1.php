@@ -120,6 +120,10 @@ include 'navbar.php';
    		right:20px;
    		top:55px;
 	}
+	.hovlog:hover{
+		background-color: #ff8000;
+		border-radius: 4px;
+	}
 </style>
 <body>
 <nav class="navbar navbar-inverse navbar-static-top">
@@ -164,8 +168,8 @@ include 'navbar.php';
 </nav>
 
 <form align="right" name="form1" method="post" action="log_out2.php">
-  <label class="logoutLblPos">
-  <input name="submit2" type="submit" id="submit2" value="Sign out">
+  <label class="logoutLblPos hovlog">
+  <input style="background-color: #ffb366; font-weight:normal;" name="submit2" type="submit" id="submit2" value="Sign out">
   </label>
 </form>
 

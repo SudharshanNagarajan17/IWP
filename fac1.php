@@ -103,14 +103,18 @@ label{
    right:20px;
    top:5px;
 }
+.hovlog:hover{
+    background-color: #ff8000;
+    border-radius: 15px;
+}
 </style>
 <body>
 
 <h1><center>WORKSHOP DETAILS</center></h1>
 
 <form align="right" name="form1" method="post" action="log_out.php">
-  <label class="logoutLblPos">
-  <input name="submit2" type="submit" id="submit2" value="Sign out">
+  <label class="logoutLblPos hovlog">
+  <input style="background-color: #ffb366; color: black;" name="submit2" type="submit" id="submit2" value="Sign out">
   </label>
 </form>
 
