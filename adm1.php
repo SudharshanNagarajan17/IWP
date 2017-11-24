@@ -114,7 +114,12 @@ include 'navbar.php';
 	}
 	.navbar-nav .active a{
       background: #999999 !important;
- }
+ 	}
+ 	.logoutLblPos{
+   		position:fixed;
+   		right:20px;
+   		top:55px;
+	}
 </style>
 <body>
 <nav class="navbar navbar-inverse navbar-static-top">
@@ -157,6 +162,13 @@ include 'navbar.php';
 
         </div>
 </nav>
+
+<form align="right" name="form1" method="post" action="log_out2.php">
+  <label class="logoutLblPos">
+  <input name="submit2" type="submit" id="submit2" value="Sign out">
+  </label>
+</form>
+
 </body>
 </html>
 
