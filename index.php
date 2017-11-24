@@ -74,6 +74,7 @@ session_start();
     }
     table.table1{
         border-collapse: collapse;
+        table-layout: fixed;
         width: 100%;
         min-width: 800px;
         border:1px solid black;
@@ -227,7 +228,7 @@ session_start();
             </table>
         </td>
 
-        <th rowspan="9" class="table3" style="width: 1%;" bgcolor="#C3C4C2">LUNCH</th>    
+        <th rowspan="7" class="table3" style="width: 1%;" bgcolor="#C3C4C2">LUNCH</th>    
         <td colspan="2">
             <table class="table3">
                 <tr>
