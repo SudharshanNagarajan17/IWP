@@ -1,3 +1,12 @@
+<?php
+
+session_start();
+
+if(isset($_SESSION["admpass"]) && isset($_SESSION["admuser"]))
+    echo "<script>window.open('adm1.php','_self')</script>";
+
+?>
+
 <!DOCTYPE html>
 <html>
 <style>

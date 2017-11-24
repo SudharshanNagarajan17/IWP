@@ -1,5 +1,9 @@
 <?php
 
+session_start();
+
+error_reporting(0);
+
 include 'passwords.php';
 
 $flag=0;
@@ -7,10 +11,17 @@ $flag=0;
 $u=$_POST['t1'];
 $p=$_POST['t2'];
 
-if(strcmp($faculty_username,$u)!=0 || strcmp($faculty_password,$p)!=0)
+
+if(isset($_SESSION["facpass"]) && isset($_SESSION["facuser"]))
+  $flag=1;
+else if(strcmp($faculty_username,$u)!=0 || strcmp($faculty_password,$p)!=0)
 	echo "<script>alert('Invalid Credentials');window.open(window.history.back(),'_self');</script>";
 else
+{
   $flag=1;
+  $_SESSION["facpass"]=$p;
+  $_SESSION["facuser"]=$u;
+}
 ?>
 
 <!DOCTYPE html>
@@ -132,7 +143,7 @@ label{
 <script>
 	function cancel()
 	{
-		window.open(window.history.back(),"_self");
+		window.open("index.php","_self");
 	}
 	$( function() {
     $( "#datepicker" ).datepicker({

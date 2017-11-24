@@ -1,3 +1,13 @@
+<?php
+
+session_start();
+
+if(isset($_SESSION["facpass"]) && isset($_SESSION["facuser"]))
+    echo "<script>window.open('fac1.php','_self')</script>";
+
+?>
+
+
 <!DOCTYPE html>
 <html>
 <style>

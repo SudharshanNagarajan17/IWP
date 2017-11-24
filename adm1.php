@@ -1,4 +1,7 @@
 <?php
+
+session_start();
+
 error_reporting(0);
 
 include 'passwords.php';
@@ -8,10 +11,16 @@ $flag=0;
 $u=$_POST['t1'];
 $p=$_POST['t2'];
 
-if(strcmp($admin_username,$u)!=0 || strcmp($admin_password,$p)!=0)
-	echo "<script>alert('Invalid Credentials');window.open(window.history.back(),'_self');</script>";
-else
+if(isset($_SESSION["admpass"]) && isset($_SESSION["admuser"]))
 	$flag=1;
+else if(strcmp($admin_username,$u)!=0 || strcmp($admin_password,$p)!=0)
+	echo "<script>alert('Invalid Credentials');window.open('index.php','_self');</script>";
+else
+{
+	$flag=1;
+	$_SESSION["admpass"]=$p;
+	$_SESSION["admuser"]=$u;
+}
 
 include 'navbar.php';
 
