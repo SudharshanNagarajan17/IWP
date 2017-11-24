@@ -192,78 +192,78 @@ session_start();
         <td colspan="2">
             <table class="table3">
                 <tr>
-                    <td rowspan="2" bgcolor="#C3C4C2">Theory</td><td bgcolor="#C3C4C2">Start</td>
+                    <td rowspan="2" bgcolor="#C3C4C2"><b>Theory</b></td><td bgcolor="#C3C4C2"><b>Start</b></td>
                 </tr>
                 <tr>
-                    <td bgcolor="#C3C4C2">End</td>
-                </tr>
-            </table>
-        </td>
-        <td colspan="2">
-            <table class="table3">
-                <tr>
-                    <td>08:00</td><td>08:55</td>
-                </tr>
-                <tr>
-                    <td>08:50</td><td>09:45</td>
+                    <td bgcolor="#C3C4C2"><b>End</b></td>
                 </tr>
             </table>
         </td>
         <td colspan="2">
             <table class="table3">
                 <tr>
-                    <td>09:50</td><td>10:45</td>
+                    <td><b>08:00</b></td><td><b>08:55</b></td>
                 </tr>
                 <tr>
-                    <td>10:40</td><td>11:35</td>
+                    <td><b>08:50</b></td><td><b>09:45</b></td>
                 </tr>
             </table>
         </td>
         <td colspan="2">
             <table class="table3">
                 <tr>
-                    <td>11:40</td><td></td>
+                    <td><b>09:50</b></td><td><b>10:45</b></td>
                 </tr>
                 <tr>
-                    <td>12:30</td><td></td>
+                    <td><b>10:40</b></td><td><b>11:35</b></td>
+                </tr>
+            </table>
+        </td>
+        <td colspan="2">
+            <table class="table3">
+                <tr>
+                    <td><b>11:40</b></td><td></td>
+                </tr>
+                <tr>
+                    <td><b>12:30</b></td><td></td>
                 </tr>
             </table>
         </td>
 
         <td rowspan="7" style="width: 1%;" bgcolor="#C3C4C2">
-        	<span>L</span><br>
-        	<span>U</span><br>
-        	<span>N</span><br>
-        	<span>C</span><br>
-        	<span>H</span>
+        	<span><b>L</b></span><br>
+        	<span><b>U</b></span><br>
+        	<span><b>N</b></span><br>
+        	<span><b>C</b></span><br>
+        	<span><b>H</b></span>
     	</td>    
         <td colspan="2">
             <table class="table3">
                 <tr>
-                    <td>14:00</td><td>14:55</td>
+                    <td><b>14:00</b></td><td><b>14:55</b></td>
                 </tr>
                 <tr>
-                    <td>14:50</td><td>15:45</td>
-                </tr>
-            </table>
-        </td>
-        <td colspan="2">
-            <table class="table3">
-                <tr>
-                    <td>15:50</td><td>16:45</td>
-                </tr>
-                <tr>
-                    <td>16:40</td><td>17:35</td>
+                    <td><b>14:50</b></td><td><b>15:45</b></td>
                 </tr>
             </table>
         </td>
         <td colspan="2">
             <table class="table3">
                 <tr>
-                    <td>17:40</td><td></td>
+                    <td><b>15:50</b></td><td><b>16:45</b></td>
                 </tr>
                 <tr>
-                    <td>18:30</td><td></td>
+                    <td><b>16:40</b></td><td><b>17:35</b></td>
+                </tr>
+            </table>
+        </td>
+        <td colspan="2">
+            <table class="table3">
+                <tr>
+                    <td><b>17:40</b></td><td></td>
+                </tr>
+                <tr>
+                    <td><b>18:30</b></td><td></td>
                 </tr>
             </table>
         </td>
@@ -273,70 +273,70 @@ session_start();
         <td colspan="2">
             <table class="table3">
                 <tr>
-                    <td rowspan="2" bgcolor="#C3C4C2">Lab</td><td bgcolor="#C3C4C2">Start</td>
+                    <td rowspan="2" bgcolor="#C3C4C2"><b>Lab</b></td><td bgcolor="#C3C4C2"><b>Start</b></td>
                 </tr>
                 <tr>
-                    <td bgcolor="#C3C4C2">End</td>
-                </tr>
-            </table>
-        </td>
-        <td colspan="2">
-            <table class="table3">
-                <tr>
-                    <td>08:00</td><td>-</td>
-                </tr>
-                <tr>
-                    <td>-</td><td>09:40</td>
+                    <td bgcolor="#C3C4C2"><b>End</b></td>
                 </tr>
             </table>
         </td>
         <td colspan="2">
             <table class="table3">
                 <tr>
-                    <td>09:50</td><td>-</td>
+                    <td><b>08:00</b></td><td>-</td>
                 </tr>
                 <tr>
-                    <td>-</td><td>11:30</td>
-                </tr>
-            </table>
-        </td>
-        <td colspan="2">
-            <table class="table3">
-                <tr>
-                    <td>11:40</td><td>-</td>
-                </tr>
-                <tr>
-                    <td>-</td><td>13:20</td>
+                    <td>-</td><td><b>09:40</b></td>
                 </tr>
             </table>
         </td>
         <td colspan="2">
             <table class="table3">
                 <tr>
-                    <td>14:00</td><td>-</td>
+                    <td><b>09:50</b></td><td>-</td>
                 </tr>
                 <tr>
-                    <td>-</td><td>15:40</td>
-                </tr>
-            </table>
-        </td>
-        <td colspan="2">
-            <table class="table3">
-                <tr>
-                    <td>15:50</td><td>-</td>
-                </tr>
-                <tr>
-                    <td>-</td><td>17:30</td>
+                    <td>-</td><td><b>11:30</b></td>
                 </tr>
             </table>
         </td>
         <td colspan="2">
             <table class="table3">
                 <tr>
-                    <td>17:40</td><td>-</td>
+                    <td><b>11:40</b></td><td>-</td>
                 </tr>
                 <tr>
-                    <td>-</td><td>19:20</td>
+                    <td>-</td><td><b>13:20</b></td>
+                </tr>
+            </table>
+        </td>
+        <td colspan="2">
+            <table class="table3">
+                <tr>
+                    <td><b>14:00</b></td><td>-</td>
+                </tr>
+                <tr>
+                    <td>-</td><td><b>15:40</b></td>
+                </tr>
+            </table>
+        </td>
+        <td colspan="2">
+            <table class="table3">
+                <tr>
+                    <td><b>15:50</b></td><td>-</td>
+                </tr>
+                <tr>
+                    <td>-</td><td><b>17:30</b></td>
+                </tr>
+            </table>
+        </td>
+        <td colspan="2">
+            <table class="table3">
+                <tr>
+                    <td><b>17:40</b></td><td>-</td>
+                </tr>
+                <tr>
+                    <td>-</td><td><b>19:20</b></td>
                 </tr>
             </table>
         </td>
