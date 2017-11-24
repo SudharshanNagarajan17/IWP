@@ -98,10 +98,22 @@ div {
 label{
 	font-weight: bold;
 }
+.logoutLblPos{
+   position:fixed;
+   right:20px;
+   top:5px;
+}
 </style>
 <body>
 
 <h1><center>WORKSHOP DETAILS</center></h1>
+
+<form align="right">
+  <label class="logoutLblPos">
+  <input type="button" onclick="signout()" id="submit2" value="Sign out">
+  </label>
+</form>
+
 <div class="form-group">
   <form action="fac2.php" method="post">
     <label>Name</label>
@@ -145,6 +157,12 @@ label{
 	{
 		window.open("index.php","_self");
 	}
+  function signout()
+  {
+    <?php unset($_SESSION["facpass"]);
+    unset($_SESSION["facuser"]); ?>
+    window.open("index.php","_self");
+  }
 	$( function() {
     $( "#datepicker" ).datepicker({
       changeMonth: true,

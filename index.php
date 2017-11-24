@@ -685,7 +685,7 @@ session_start();
 </div></div>
 
 <div class="wrapper">
-    <iframe name="if1" id="iFr" width="100%" height="30" frameborder="0" scrolling="no"></iframe>
+    <iframe name="if1" id="iFr" width="100%" height="380" frameborder="0" scrolling="no"></iframe>
 </div>
 </body>
 </html>
