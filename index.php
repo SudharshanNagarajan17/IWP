@@ -77,6 +77,7 @@ session_start();
         table-layout: fixed;
         width: 100%;
         min-width: 800px;
+        max-width: 95%;
         border:1px solid black;
         height: 400;
         cursor: default;
@@ -100,13 +101,12 @@ session_start();
 
     table.table2 td{
         border-left: 1px solid black;
-        border-bottom: 1px solid black;
         height: 20px;
         width: 5%;
         text-align: center;
     }
     .container{
-    	width: 95%;
+    	width: 100%;
     }
     .table2 td:hover{
         background-color: #ffe699;
@@ -230,7 +230,13 @@ session_start();
             </table>
         </td>
 
-        <th rowspan="7" class="table3" style="width: 1%;" bgcolor="#C3C4C2">LUNCH</th>    
+        <th rowspan="7" style="width: 1%;" bgcolor="#C3C4C2">
+        	<span>L</span><br>
+        	<span>U</span><br>
+        	<span>N</span><br>
+        	<span>C</span><br>
+        	<span>H</span>
+    	</th>    
         <td colspan="2">
             <table class="table3">
                 <tr>
@@ -679,7 +685,7 @@ session_start();
 </div></div>
 
 <div class="wrapper">
-    <iframe name="if1" id="iFr" width="100%" height="360" frameborder="0" scrolling="no"></iframe>
+    <iframe name="if1" id="iFr" width="100%" height="380" frameborder="0" scrolling="no"></iframe>
 </div>
 </body>
 </html>
