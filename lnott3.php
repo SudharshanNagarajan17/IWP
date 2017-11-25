@@ -104,7 +104,7 @@ echo "
         	<span><b>C</b></span><br>
         	<span><b>H</b></span>
 
-</th><th>14:00</th><th>14:55</th><th>15:50</th><th>16:45</th><th>17:40</th><th>-</th>
+</th><th>14:00</th><th>14:55</th><th>15:50</th><th>16:45</th><th>17:40</th><th></th>
 </tr>
 <tr bgcolor='#CECCFD'>
 <th bgcolor='#C3C4C2'>End</th><th>08:50</th><th>09:45</th><th>10:40</th><th>11:35</th><th>12:30</th><th></th><th>14:50</th><th>15:45</th><th>16:40</th><th>17:35</th><th>18:30</th><th></th>
