@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Nov 24, 2017 at 03:38 PM
+-- Generation Time: Nov 25, 2017 at 12:01 PM
 -- Server version: 5.7.19-log
 -- PHP Version: 7.1.8
 
@@ -148,13 +148,14 @@ INSERT INTO `workshop` (`name`, `no`, `dat`, `tfr`, `tto`, `det`, `sno`) VALUES
 ('t', 'AB1-205', '2017-11-01', '08:00', '17:00', 'testing', 29),
 ('A', 'AB1-205', '2017-11-02', '00:00', '16:00', 'g', 31),
 ('d', 'AB1-205', '2017-11-03', '09:00', '16:00', 'd', 32),
-('f', 'AB1-205', '2017-11-25', '09:00', '16:00', 'f', 34),
 ('g', 'AB1-205', '2017-11-25', '09:00', '16:00', 'a', 35),
 ('de', 'AB1-205', '2017-12-02', '09:00', '16:00', '1', 42),
 ('q', 'AB1-205', '2017-11-11', '09:00', '16:00', 'qwe', 43),
 ('s', 'AB1-205', '2017-11-14', '07:07', '17:01', 's', 44),
 ('qwee', 'AB1-205', '2017-11-22', '13:00', '16:00', 'qe', 46),
-('ytr', 'AB1-210', '2017-11-24', '01:15', '06:00', 'wewee', 47);
+('ytr', 'AB1-210', '2017-11-24', '01:15', '06:00', 'wewee', 47),
+('p', 'AB1-205', '2017-11-30', '09:00', '16:00', 'd', 48),
+('d', 'AB1-205', '2017-11-29', '09:00', '16:00', 'd', 49);
 
 --
 -- Indexes for dumped tables
@@ -186,7 +187,7 @@ ALTER TABLE `workshop`
 -- AUTO_INCREMENT for table `workshop`
 --
 ALTER TABLE `workshop`
-  MODIFY `sno` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=48;
+  MODIFY `sno` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
 
 --
 -- Constraints for dumped tables

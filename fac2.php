@@ -113,6 +113,8 @@ while($row=mysqli_fetch_array($a))
 {
 	if(strcmp($row['no'],$b)==0 && strcmp($row['dat'],$c)==0)
 	{
+		if($row['tfr']==$d)
+			$k=1;
 		if($row['tfr']<$d && $d<$row['tto'])
 			$k=1;
 		else if($row['tfr']<$e && $e<$row['tto'])
