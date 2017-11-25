@@ -10,7 +10,7 @@ function openCon()
 	$conn=mysqli_connect($dbhost,$dbuser,$dbpass,$db);
 	
 	if(!$conn)
-		die("connection failed: ".mysql_error());
+		die("connection failed: ".mysqli_error());
 	
 	return $conn;
 }
