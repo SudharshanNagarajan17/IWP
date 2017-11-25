@@ -97,7 +97,14 @@ echo "
 <table class='table4' align='center' height=60%>
 
 <tr bgcolor='#CECCFD'>
-<th rowspan='2' bgcolor='#C3C4C2'>Theory</th><th bgcolor='#C3C4C2'>Start</th><th>08:00</th><th>08:55</th><th>09:50</th><th>10:45</th><th>11:40</th><th></th><th rowspan='14' bgcolor='#C3C4C2'>Lunch</th><th>14:00</th><th>14:55</th><th>15:50</th><th>16:45</th><th>17:40</th><th>-</th>
+<th rowspan='2' bgcolor='#C3C4C2'>Theory</th><th bgcolor='#C3C4C2'>Start</th><th>08:00</th><th>08:55</th><th>09:50</th><th>10:45</th><th>11:40</th><th></th><th rowspan='9' style='width: 1%;' bgcolor='#C3C4C2'>
+			<span><b>L</b></span><br>
+        	<span><b>U</b></span><br>
+        	<span><b>N</b></span><br>
+        	<span><b>C</b></span><br>
+        	<span><b>H</b></span>
+
+</th><th>14:00</th><th>14:55</th><th>15:50</th><th>16:45</th><th>17:40</th><th>-</th>
 </tr>
 <tr bgcolor='#CECCFD'>
 <th bgcolor='#C3C4C2'>End</th><th>08:50</th><th>09:45</th><th>10:40</th><th>11:35</th><th>12:30</th><th></th><th>14:50</th><th>15:45</th><th>16:40</th><th>17:35</th><th>18:30</th><th></th>
