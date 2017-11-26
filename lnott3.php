@@ -85,8 +85,8 @@ if($an=="")
 if($am=="")
 	$am="NIL";
 
-$fd="Mobile No: ".$fn."<br />Maid ID: ".$fm;
-$ad="Mobile No: ".$an."<br />Maid ID: ".$am;
+$fd="<b>Mobile No:</b> ".$fn."<br /><b>Maid ID:</b> ".$fm;
+$ad="<b>Mobile No:</b> ".$an."<br /><b>Maid ID:</b> ".$am;
 
 
 echo "<h2 class='pos'>".$row['block']." ".$row['cno']."</h2>";

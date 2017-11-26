@@ -125,11 +125,11 @@ for($j=0;$j<15;$j++)
 {
 echo "
 	<div data-role='popup' id='popupa".$j."'>
-		<p>Name: Prof. ".$fn[$j]."<br />Mobile No: ".$fp[$j]."<br />Mail ID: ".$fm[$j]."</p>
+		<p><b>Name:</b> Prof. ".$fn[$j]."<br /><b>Mobile No:</b> ".$fp[$j]."<br /><b>Mail ID:</b> ".$fm[$j]."</p>
 	</div>
 
 	<div data-role='popup' id='popupb".$j."'>
-		<p>Name: ".$an[$j]."<br />Mobile No: ".$ap[$j]."<br />Mail ID: ".$am[$j]."</p>
+		<p><b>Name:</b> ".$an[$j]."<br /><b>Mobile No:</b> ".$ap[$j]."<br /><b>Mail ID:</b> ".$am[$j]."</p>
 	</div>";
 }
 
