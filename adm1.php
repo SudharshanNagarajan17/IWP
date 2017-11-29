@@ -2,6 +2,8 @@
 
 session_start();
 
+include 'https.php';
+
 error_reporting(0);
 
 include 'passwords.php';
@@ -30,7 +32,7 @@ include 'navbar.php';
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+  <title>VITCC-LMS</title>
 </head>
 <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -347,6 +349,14 @@ echo "</table></div></div><br>";
 
 fclose($file);
 echo "<center><button><a class='down' href='workshop-upc.csv' download>Download</a></button></center>";
+
+echo "<br><br><h3 style='color: red;'>Update Database (only .csv files with course code, slots and venue in the fixed order)</h3>";
+echo "<br><html><center><b>Sample:</b><span style='display:inline-block; width: 25px;''></span><img src='demo.png'></center></html><br>";
+echo "<form action ='admupdate.php' method ='post' enctype='multipart/form-data'>
+	<input type='file' accept='.csv' name='f1' required style='display: inline;'>
+	<input type='submit' value='Update' style='display: inline;'>
+</form><br>";
+
 }
 ?>
 

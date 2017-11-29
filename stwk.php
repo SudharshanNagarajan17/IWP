@@ -1,5 +1,6 @@
 <?php
 error_reporting(0);
+include 'https.php';
 include "navbar.php";
 
 ?>
@@ -7,7 +8,7 @@ include "navbar.php";
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+  <title>VITCC-LMS</title>
 </head>
 <style type="text/css">
 	td{

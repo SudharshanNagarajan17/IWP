@@ -1,9 +1,13 @@
+<?php
+include 'https.php';
+?>
+
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+		<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -19,6 +23,7 @@ table.table4{
 	border-collapse: collapse;
 	width: 100%;
 	min-width: 800px;
+	max-width: 90%;
 	height: 100%;
 	border:1px solid black;
 }
@@ -38,6 +43,9 @@ table.table4 tr{
 	border-bottom: 1px solid black;
 	width: 4%;
 }
+.container{
+  	width: 100%;
+}
 p{
 	cursor: default;
 }
@@ -53,9 +61,7 @@ a:link {
 </html>
 
 <?php
-
 $i=$_GET['i'];;
-
 
 include 'link.php';
 
@@ -169,12 +175,21 @@ echo "
 </table></div></div>
 
 <div class='pos'>
-<br><b>Lab Incharge: </b><a href='#popupBasic1' data-rel='popup' data-transition='pop'>Prof. ".$row['inc_name']."</a>
+<br><b>Lab Incharge: </b>";
 
 
+if($row['inc_name']==NULL)
+	echo "-";
+else
+	echo "<a href='#popupBasic1' data-rel='popup' data-transition='pop'>Prof. ".$row['inc_name']."</a>";
 
 
-<br><b>Lab Assistant: </b><a href='#popupBasic2' data-rel='popup' data-transition='pop'>".$row['ast_name']."</a>
+echo "<br><b>Lab Assistant: </b>";
+
+if($row['ast_name']==NULL)
+	echo "-";
+else
+	echo "<a href='#popupBasic2' data-rel='popup' data-transition='pop'>".$row['ast_name']."</a>
 
 <div data-role='popup' id='popupBasic1'>
 <p>".$fd."</p>

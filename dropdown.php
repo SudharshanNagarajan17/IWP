@@ -1,7 +1,11 @@
 <?php
+include 'https.php';
 include 'navbar.php';
 ?>
 <html>
+<head>
+	<title>VITCC-LMS</title>
+</head>
 <nav class="navbar navbar-inverse navbar-static-top">
         <div class="container-fluid">
 

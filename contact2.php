@@ -1,9 +1,13 @@
+<?php
+include 'https.php';
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
-		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
-		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
-		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+		<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+		<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -45,7 +49,6 @@
 </html>
 
 <?php
-
 include 'link.php';
 $conn=openCon();
 
@@ -81,8 +84,17 @@ $i=0;
 while($row=mysqli_fetch_array($result))
 {
 	echo "<tr><td>".$row['block']."</td><td>".$row['cno']."</td>";
-	echo "<td><a href='#popupa".$i."' data-rel='popup' data-transition='pop'>Prof. ".$row['inc_name']."</a></td>
-		<td><a href='#popupb".$i."' data-rel='popup' data-transition='pop'>".$row['ast_name']."</a></td></tr>";
+
+	if($row['inc_name']==NULL)
+		echo "<td>-</td>";
+	else
+		echo "<td><a href='#popupa".$i."' data-rel='popup' data-transition='pop'>Prof. ".$row['inc_name']."</a></td>";
+
+	if($row['ast_name']==NULL)
+		echo "<td>-</td>";
+	else
+		echo "<td><a href='#popupb".$i."' data-rel='popup' data-transition='pop'>".$row['ast_name']."</a></td></tr>";
+	
 	$i++;
 }
 

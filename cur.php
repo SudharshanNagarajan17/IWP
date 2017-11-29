@@ -1,3 +1,7 @@
+<?php
+include 'https.php';
+?>
+
 <style>
 	.curdisp{
 		color: red;
@@ -10,7 +14,6 @@
 </style>
 
 <?php
-
 $sd=(string)date('Y-m-d');
 
 $a = "SELECT * FROM workshop WHERE dat='$sd' ORDER BY tfr,no";

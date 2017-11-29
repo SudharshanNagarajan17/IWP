@@ -2,6 +2,8 @@
 
 session_start();
 
+include 'https.php';
+
 if(isset($_SESSION["facpass"]) && isset($_SESSION["facuser"]))
     echo "<script>window.open('fac1.php','_self')</script>";
 
@@ -10,6 +12,10 @@ if(isset($_SESSION["facpass"]) && isset($_SESSION["facuser"]))
 
 <!DOCTYPE html>
 <html>
+<head>
+    <title>VITCC-LMS</title>
+    <link rel="shortcut icon" href="logo.png" />
+</head>
 <style>
 /* Full-width input fields */
 input[type=text], input[type=password] {

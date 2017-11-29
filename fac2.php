@@ -1,5 +1,6 @@
 <?php
 
+include 'https.php';
 $a=$_POST['t1'];
 $b=$_POST['s1'];
 $c=$_POST['d1'];
@@ -140,3 +141,10 @@ else
 }
 }
 ?>
+
+<html>
+<head>
+  <title>VITCC-LMS</title>
+  <link rel="shortcut icon" href="logo.png" />
+</head>
+</html>

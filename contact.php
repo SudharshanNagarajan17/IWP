@@ -1,8 +1,12 @@
 <?php
+include 'https.php';
 include "navbar.php";
 ?>
 <!DOCTYPE html>
 <html>
+<head>
+  <title>VITCC-LMS</title>
+</head>
 <style>
 	.wrapper{
 		position:relative;

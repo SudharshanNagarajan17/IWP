@@ -1,5 +1,5 @@
 <?php
-
+include 'https.php';
 $fromdate=$_POST['d1'];
 $todate=$_POST['d2'];
 
@@ -44,3 +44,10 @@ readfile('workshop-ch.csv');
 
 }
 ?>
+
+<html>
+<head>
+  <title>VITCC-LMS</title>
+  <link rel="shortcut icon" href="logo.png" />
+</head>
+</html>

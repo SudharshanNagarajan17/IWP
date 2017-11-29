@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-
+include 'https.php';
 error_reporting(0);
 
 include 'passwords.php';
@@ -26,6 +26,10 @@ else
 
 <!DOCTYPE html>
 <html>
+<head>
+  <title>VITCC-LMS</title>
+  <link rel="shortcut icon" href="logo.png" />
+</head>
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
