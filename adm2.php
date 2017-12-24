@@ -41,7 +41,7 @@ fclose($file);
 header('Content-type: application/csv');
 header('Content-Disposition: attachment; filename="workshop-ch.csv"');
 readfile('workshop-ch.csv');
-
+exit;
 }
 ?>
 

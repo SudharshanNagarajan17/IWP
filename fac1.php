@@ -86,7 +86,7 @@ input[type=button]:hover {
 }
 
 input[type=date],[type=time]{
-	width: 100%;
+  width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -100,7 +100,7 @@ div {
     padding: 20px;
 }
 label{
-	font-weight: bold;
+  font-weight: bold;
 }
 .logoutLblPos{
    position:fixed;
@@ -112,7 +112,7 @@ label{
     border-radius: 15px;
 }
 </style>
-<body>
+<body onload="radioreset()" onreset="radioreset()">
 
 <h1><center>WORKSHOP DETAILS</center></h1>
 
@@ -126,30 +126,36 @@ label{
   <form action="fac2.php" method="post">
     <label>Name</label>
     <input type="text" id="fname" name="t1" placeholder="Enter your name" required>
-    <label>Lab Number</label>
- 		<select name="s1" required>
-  		<option disabled>Select lab number</option>
-  				<?php
-  				include "link.php";
-  				$conn=openCon();
-  				$a="SELECT block,cno FROM lab ORDER BY block,cno";
-  				$t=mysqli_query($conn,$a);
-  				while($row=mysqli_fetch_array($t))
-  				{
-  					$n=$row['block']."-".$row['cno'];
-  					echo "<option value='".$n."'>$n</option>";
-  				}
-  				?>
-  		</select>
+    <br><br><label>Lab Number</label>
+    <select name="s1" required>
+      <option disabled>Select lab number</option>
+          <?php
+          include "link.php";
+          $conn=openCon();
+          $a="SELECT block,cno FROM lab ORDER BY block,cno";
+          $t=mysqli_query($conn,$a);
+          while($row=mysqli_fetch_array($t))
+          {
+            $n=$row['block']."-".$row['cno'];
+            echo "<option value='".$n."'>$n</option>";
+          }
+          ?>
+      </select>
 
 
-    <label>Date</label>
-    <input type='text' name='d1' required id='datepicker' placeholder='yyyy-mm-dd'>
-    <label>From</label>
-    <input type="time" name="tt1" value="09:00" required><br>
+    <br><br><label>Date</label>
+      <br><input type='radio' name='choice' id='ch1' required value=1 onclick="disabletodate()">Single day</input>
+      <br><input type='radio' name='choice' id='ch2' required value=2 onclick="enabletodate()">Multiple days</input>
+
+    <input placeholder="From" class="textbox-n" type="text" name='d1' onfocus="(this.type='date')" id='fromdate' required disabled min="<?php echo date('Y-m-d');?>">
+    <input placeholder="To" class="textbox-n" type="text" name='d2' onfocus="(this.type='date')" id='todate' required disabled min="<?php echo date('Y-m-d');?>">
+
+    <br><br><label>From</label>
+    <input type="time" name="tt1" required><br>
     <label>To</label>
-    <input type="time" name="tt2" value="16:00" required><br>
-    <label>Workshop Details</label>
+    <input type="time" name="tt2" required><br>
+    
+    <br><br><label>Workshop Details</label>
     <input type="text" id="lname" name="t2" required placeholder="Enter the workshop details">
 
     
@@ -161,18 +167,36 @@ label{
 
 </body>
 <script>
-	function cancel()
-	{
-		window.open("index.php","_self");
-	}
-	$( function() {
-    $( "#datepicker" ).datepicker({
-      changeMonth: true,
-      changeYear: true,
-      minDate: 0,
-      maxDate: "+1Y",
-      dateFormat: 'yy-mm-dd'
-    });
-  } );
+  function cancel()
+  {
+    window.open("index.php","_self");
+  }
+  function enabletodate()
+  {
+    document.getElementById('todate').disabled=false;
+    document.getElementById('todate').placeholder='To';
+    document.getElementById('todate').type='text';
+    document.getElementById('todate').value="";
+    document.getElementById('fromdate').disabled=false;
+    document.getElementById('fromdate').placeholder='From';
+    document.getElementById('fromdate').type='text';
+    document.getElementById('fromdate').value="";
+  }
+  function disabletodate()
+  {
+    document.getElementById('todate').disabled=true;
+    document.getElementById('todate').placeholder='To';
+    document.getElementById('todate').type='text';
+    document.getElementById('todate').value="";
+    document.getElementById('fromdate').disabled=false;
+    document.getElementById('fromdate').placeholder='Choose the date';
+    document.getElementById('fromdate').type='text';
+    document.getElementById('fromdate').value="";
+  }
+  function radioreset()
+  {
+    document.getElementById('ch1').checked = false;
+    document.getElementById('ch2').checked = false;
+  }
 </script>
 </html>

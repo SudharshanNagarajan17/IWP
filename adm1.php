@@ -273,9 +273,9 @@ echo "<h3>Report</h3>";
 <body>
 	<form action="adm2.php" method="post" target="_blank">
 		<label>From:</label><br>
-		<input type='text' name='d1' required id='datepicker1' placeholder='yyyy-mm-dd'>
+		<input type='date' name='d1' required>
 		<br><br><label>To:</label><br>
-		<input type='text' name='d2' required id='datepicker2' placeholder='yyyy-mm-dd'>
+		<input type='date' name='d2' required>
 		<br><br><input style="margin-left: 40px" type="submit" value="Download">
 	</form>
 </body>
@@ -351,7 +351,7 @@ fclose($file);
 echo "<center><button><a class='down' href='workshop-upc.csv' download>Download</a></button></center>";
 
 echo "<br><br><h3 style='color: red;'>Update Database (only .csv files with course code, slots and venue in the fixed order)</h3>";
-echo "<br><html><center><b>Sample:</b><span style='display:inline-block; width: 25px;''></span><img src='demo.png'></center></html><br>";
+echo "<br><html><center><b>Sample:</b><span style='display:inline-block; width: 25px;''></span><img src='demo.PNG'></center></html><br>";
 echo "<form action ='admupdate.php' method ='post' enctype='multipart/form-data'>
 	<input type='file' accept='.csv' name='f1' required style='display: inline;'>
 	<input type='submit' value='Update' style='display: inline;'>
