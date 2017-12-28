@@ -82,7 +82,11 @@ include 'navbar.php';
 </html>
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <script>
 	$(document).ready(function(){
 
@@ -186,7 +190,7 @@ echo "</div>
 	}
 </style>
 	<div class="wr">
-		<iframe name="if4" width="100%" style="overflow: hidden; height: 100%; width: 100%; position: absolute;" height="100%" id="iFr2" frameborder="0"></iframe>
+		<iframe name="if4" width="100%" style="position: absolute;" height="100%" id="iFr2" frameborder="0" scrolling="no"></iframe>
 	</div>
 </html>
 

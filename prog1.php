@@ -291,7 +291,7 @@ echo "</div>
 
 <html>
     <div class="wr">
-        <iframe name="if4" width="100%" style="overflow: hidden; height: 100%; width: 100%; position: absolute;" height="100%" id="iFr2" frameborder="0"></iframe>
+        <iframe name="if4" width="100%" style="overflow: hidden; height: 100%; width: 100%; position: absolute;"  scrolling="no" height="100%" id="iFr2" frameborder="0"></iframe>
     </div>
 </html>
 

@@ -167,16 +167,28 @@ echo "<center><button onclick='addrow($i)'>Add</button></center><br><br>";
 		else if(n==2)
 			x=prompt('Enter the updated brand');
 		else if(n==3)
+		{
 			x=prompt('Enter the updated no. of systems');
-
-		window.open("progupd.php?n="+n+"&i="+i+"&x="+x+"&tab=infrahw","_self");
+			if (isNaN(x)) 
+  			{
+    			alert("Invalid Input");
+    			return false;
+  			}
+  		}
+		if(x)
+			window.open("progupd.php?n="+n+"&i="+i+"&x="+x+"&tab=infrahw","_self");
 	}
 	function addrow(i)
 	{
 		x=prompt('Enter the system configuration');
 		y=prompt('Enter the brand');
 		z=prompt('Enter the no. of systems');
-
-		window.open("progadd.php?x="+x+"&y="+y+"&z="+z+"&i="+i+"&tab=infrahw","_self");
+		if (isNaN(z)) 
+  		{
+    		alert("Invalid Input");
+    		return false;
+  		}
+		if(x && y && z)
+			window.open("progadd.php?x="+x+"&y="+y+"&z="+z+"&i="+i+"&tab=infrahw","_self");
 	}
 </script>
