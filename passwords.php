@@ -6,4 +6,7 @@ $admin_password="admin";
 $faculty_username="faculty";
 $faculty_password="faculty";
 
+$prog_username="programmer";
+$prog_password="programmer";
+
 ?>

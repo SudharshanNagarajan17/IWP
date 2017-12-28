@@ -56,6 +56,13 @@ include 'https.php';
                         </ul>
                     </li>
                     <li><a href="http://moodlecc.vit.ac.in">Moodle</a></li>
+                    <li class="drdn">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Lab Details <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li  class="sel"><a href="infra1.php">Infra</a></li>
+                            <li  class="sel"><a href="progwk.php">Programmer Login</a></li>
+                        </ul>
+                    </li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="contact.php">Contact</a></li>
