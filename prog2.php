@@ -155,7 +155,7 @@ fclose($file1);
 echo "<center><button><a class='down' href='hw-$bn1-$ln1.csv' download>Download</a></button></center><br>";
 
 $i=$_GET['i'];
-echo "<center><button onclick='addrow($i)'>Add</button></center><br><br>";
+echo "<center><button onclick='addrow($i)'>Add</button></center><br>";
 
 $b = "SELECT * FROM infrasw GROUP BY block,cno ORDER BY block,cno";
 

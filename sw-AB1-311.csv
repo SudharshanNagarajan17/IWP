@@ -1,0 +1,21 @@
+Package,Brand,License
+,,
+"Operating System","Linux Mint 17.1/ Windows 8",79
+"Operating System","Windows 2012 server",1
+Application,"Eclipse,NETBEAN",Freeware
+,,
+Application,"Matlab 2016","Matlab lic"
+Application,"Microsoft visual studio 2010","Microsoft Campus Agreement"
+Application,"VM Player",Freeware
+Application,"R Studio",Freeware
+"Complier /Interpreter	","g++,jdk1.7","Free ware"
+"Complier /Interpreter","IDLE Python2.7 and 3.4",Freeware
+"Tools and design",Docker,Freeware
+"Tools and design",Winrar,Freeware
+"Tools and design","Yed Tool",Freeware
+"Tools and design",Umbrello,Freeware
+"Tools and design",Scilab,Freeware
+"Tools and design","Anaconda navigator",Freeware
+"Tools and design","CiscoPacket Tracer 6",Freeware
+"Internet Browser","Google chrome & firefox",Freeware
+Antivirus,"K7 Antivirus","Campus Volume Agreement"

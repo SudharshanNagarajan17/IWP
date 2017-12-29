@@ -110,7 +110,7 @@ $ln2=$row2['cno'];
 $bn2=$row2['block'];
 $b = "SELECT * FROM infrasw WHERE block='$bn2' and cno='$ln2'";
 
-echo "<h3>Software Details</h3>";
+echo "<br><h3>Software Details</h3>";
 
 echo "<div class='container'>
 		<div class='table-responsive'>
