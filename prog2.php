@@ -203,8 +203,6 @@ while($row2=mysqli_fetch_array($result2))
 
 echo "</table></div></div><br>";
 
-$list2[$k++]=";;";
-
 foreach ($list2 as $line)
 {
   fputcsv($file2,explode(';',$line));
