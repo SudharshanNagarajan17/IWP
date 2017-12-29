@@ -131,7 +131,7 @@ $result1=mysqli_query($conn,$a);
 while($row1=mysqli_fetch_array($result1))
 {
 	$i=$row1['sno'];
-	echo "<tr><td><a onclick='updhw(1,$i)'>".$row1['sysConfig']."</a></td><td><a onclick='updhw(2,$i)'>".$row1['brand']."</a></td><td><a onclick='updhw(3,$i)'>".$row1['num']."</a></td></tr>";
+	echo "<tr><td><a onclick='updhw(1,$i)'>".$row1['sysConfig']."</a></td><td><a onclick='updhw(2,$i)'>".$row1['brand']."</a></td><td><a onclick='updhw(3,$i)'>".$row1['num']."</a></td><td><a onclick='delhw($i)'>Delete</a></td></tr>";
 	
 	$list1[$k++]=$row1['sysConfig'].";".$row1['brand'].";".$row1['num'];
 }
@@ -196,7 +196,7 @@ $result2=mysqli_query($conn,$b);
 while($row2=mysqli_fetch_array($result2))
 {
 	$i=$row2['sno'];
-	echo "<tr><td><a onclick='updsw(1,$i)'>".$row2['package']."</a></td><td><a onclick='updsw(2,$i)'>".$row2['brand']."</a></td><td><a onclick='updsw(3,$i)'>".$row2['license']."</a></td></tr>";
+	echo "<tr><td><a onclick='updsw(1,$i)'>".$row2['package']."</a></td><td><a onclick='updsw(2,$i)'>".$row2['brand']."</a></td><td><a onclick='updsw(3,$i)'>".$row2['license']."</a></td><td><a onclick='delsw($i)'>Delete</a></td></tr>";
 	
 	$list2[$y++]=$row2['package'].";".$row2['brand'].";".$row2['license'];
 }
@@ -269,8 +269,23 @@ echo "<center><button onclick='addrowSW($i)'>Add</button></center><br><br>";
 		if(x && y || z)
 			window.open("progaddSW.php?x="+x+"&y="+y+"&z="+z+"&i="+i+"&tab=infrasw","_self");
 	}
+	function delhw(i)
+	{
+		x=confirm('Do you want to delete it?');
+		if(x==1)
+		{
+			window.open("delhw.php?x="+i,"_self");
+		}
+	}
+	function delsw(i)
+	{
+		x=confirm('Do you want to delete it?');
+		if(x==1)
+		{
+			window.open("delsw.php?x="+i,"_self");
+		}
+	}
 </script>
-
 
 <script type="text/javascript">
     // all content including images has been loaded

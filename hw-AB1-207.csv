@@ -1,0 +1,61 @@
+"System Configuration",Brand,"No. of Systems"
+,,
+"Lenovo Think Centre core i5 mini CPU
+Intel Core i5/i7 CPU@3.3 GHz,
+500 GB HDD, 8 GB RAM, Keyboard, Optical Mouse,
+Lenovo LCD Monitor","Lenovo systems",18
+"HP 202 G2 MT
+Intel Core i5 CPU@3.3 GHz,
+500 GB HDD, 8 GB RAM, Keyboard, Optical Mouse,
+HP LCD Monitor","HP systems (202 G2 MT)",6
+"Dell OPTIPLEX 380
+Intel Core 2-Duo CPU@2.93 GHz,
+320 GB HDD, 4 GB RAM,
+Keyboard, Optical Mouse,
+Dell LCD Dell Monitor","Dell OPTIPLEX 380",13
+"Lenovo Think Centre
+Lenovo systems  Think centre  m71e
+Intel i3 CPU 3.10@Ghz Processor and 4 GB RAM and 320 GB HDD,
+Lenovo LCD monitor","Lenovo systems",2
+"Mac Mini:
+Intel Core 2-Duo CPU@2.4 GHz, 500GB HDD, 2 GB RAM DDR3, Keyboard, Optical Mouse,
+19”  LCD Dell Monitor","Apple (Mac Mini)",5
+"Microprocessor Kits:
+8086/8088 Microprocessor Kits with LCD Display","Vi Micro Systems Model : Micro 86 /88 LCD",35
+"Interface Kits
+8 Digit Multiplexed  (7 Segment Display)","Vi Micro Systems",0
+"Stepper Motor Controller  With Motor","Vi Micro Systems",5
+"Traffic Light Controller","Vi Micro Systems",5
+"8-Channel ADC","Vi Micro Systems",5
+"Microprocessor Kits:
+8086/8088 Microprocessor Kits with LCD Display","TMI Systems",35
+"Interface Kits
+Keyboard Interface Boards","TMI Systems",5
+"Elevator Interface","TMI Systems",5
+"Traffic Light Controller Interface","TMI Systems",5
+"ADC /DAC Interface Board","TMI Systems",5
+"ARM Kits","TMI Systems",20
+"Digital /Logic IC Trainer Kit (DLT)","Vi Micro Systems",15
+"Digital IC trainer Kit (DTK)","TMI Systems",80
+"Embedded Development Boards with Accessories
+Z-Net Embedded Flat form","Zilogic Systems",2
+"ARM Cortex M3
+Development Platform","Zilogic Systems",2
+"8051 Development Kit
+with Graphics Display","Zilogic Systems",5
+"ZIO-Java Powered
+Embedded Platform","Zilogic Systems",2
+"8051 RTOS Development Board
+(VI-51RTOS)","Vi Micro Systems",30
+"Stepper Motor (2 Kg)","Vi Micro Systems",5
+"AD 590 Transducer
+(Temperature Measurement)","Vi Micro Systems",5
+"LPC 2378 Development Board
+( VI-Arm LPC 2378)","Vi Micro Systems",3
+"Analog  IC Tester","TMI Systems",1
+"Digital IC Tester","TMI Systems",1
+"Logic Analyser",DVB100,1
+"CRO (DSO)",Bestmach,1
+"Intelligent Universal Programmer",Bestmach,1
+,,
+,"Total = ",323
