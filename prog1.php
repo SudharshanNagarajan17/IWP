@@ -320,4 +320,8 @@ echo "</div>
         if (e.data === parseInt(e.data)) 
             document.getElementById('iFr2').height = e.data + "px";
     }, false);
+
+    function closeIFrame(){
+     window.open("prog1.php","_self");
+    }
 </script>

@@ -1,20 +1,10 @@
 Package,Brand,License
 ,,
-"Operating System","Windows XP/Windows7/Windows 10","39 (Microsoft Campus Agreement) (From CTS)"
 "Operating System","MAC OS 10.8  (MAC Mini)","5,5"
 Packages,Msoffice-2007/2010,"Microsoft Campus Agreement (From CTS)"
 Packages,"Masm 6.11",Freeware
-Packages,"Dos Box 7",Freeware
-Packages,"Adobe Reader 9.3.0/ Adobe Reader 11.0",Freeware
-Compiler/Interpreter,"Developer C++  4.9.9.2",Freeware
-Compiler/Interpreter,"Java (Jdk 1.6.0)",Freeware
 Application,"Keil  uVision 4.53 for VI micro RTOS Kits",Freeware
-Application,"Keil  uVision 4.21 for TMI ARM Kits",Freeware
-Application,"Ride IDE  for VI micro RTOS Kits",Freeware
-Application,"Flash Magic 3.68  for VI micro RTOS Kits",
-Application,"Flash Magic 6.01 for TMI ARM Kits",Freeware
 Application,"IAR Embedded workbench",Freeware
-Application,"Win ISP",Freeware
 Application,"Win X Talk",Freeware
 Application,"Win Rar / Winzip",Freeware
 Application,"Xcode2 for Mac mini",Freeware
