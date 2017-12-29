@@ -270,3 +270,17 @@ echo "<center><button onclick='addrowSW($i)'>Add</button></center><br><br>";
 			window.open("progaddSW.php?x="+x+"&y="+y+"&z="+z+"&i="+i+"&tab=infrasw","_self");
 	}
 </script>
+
+
+<script type="text/javascript">
+    // all content including images has been loaded
+    window.onload = function() {
+        // post our message to the parent
+        window.parent.postMessage(
+            // get height of the content
+            document.body.scrollHeight
+            // set target domain
+            ,"*"
+        )
+    };
+</script>

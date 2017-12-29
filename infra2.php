@@ -126,6 +126,20 @@ while($row2=mysqli_fetch_array($result2))
 {
 	echo "<tr><td>".$row2['package']."</td><td>".$row2['brand']."</td><td>".$row2['license']."</td></tr>";
 }
-echo "</table></div></div>";
+echo "</table></div></div><br><br>";
 
 ?>
+
+
+<script type="text/javascript">
+    // all content including images has been loaded
+    window.onload = function() {
+        // post our message to the parent
+        window.parent.postMessage(
+            // get height of the content
+            document.body.scrollHeight
+            // set target domain
+            ,"*"
+        )
+    };
+</script>

@@ -201,7 +201,7 @@ echo "</div>
 	}
 </style>
 	<div class="wr">
-		<iframe name="if4" width="100%" style="position: absolute;" height="100%" id="iFr2" frameborder="0" scrolling="yes"></iframe>
+		<iframe name="if4" width="100%" height="100%" id="iFr2" frameborder="0" scrolling="no"></iframe>
 	</div>
 </html>
 
@@ -212,4 +212,22 @@ echo "</div>
 	{
 		window.open("infra2.php?i="+i,'if4');
 	}
+</script>
+<script type="text/javascript">
+    // browser compatibility: get method for event 
+    // addEventListener(FF, Webkit, Opera, IE9+) and attachEvent(IE5-8)
+    var myEventMethod = 
+        window.addEventListener ? "addEventListener" : "attachEvent";
+    // create event listener
+    var myEventListener = window[myEventMethod];
+    // browser compatibility: attach event uses onmessage
+    var myEventMessage = 
+        myEventMethod == "attachEvent" ? "onmessage" : "message";
+    // register callback function on incoming message
+    myEventListener(myEventMessage, function (e) {
+        // we will get a string (better browser support) and validate
+        // if it is an int - set the height of the iframe #my-iframe-id
+        if (e.data === parseInt(e.data)) 
+            document.getElementById('iFr2').height = e.data + "px";
+    }, false);
 </script>
