@@ -1,6 +1,5 @@
 <?php
 include 'https.php';
-include 'navbar.php';
 ?>
 <html>
 <head>
@@ -21,6 +20,8 @@ include 'navbar.php';
 		background-color: #e6e6e6;
 	}
 	table{
+        table-layout: fixed;
+        border-collapse: collapse;
 		cursor: default;
 		white-space: nowrap;
 		width: 100%;
@@ -67,7 +68,7 @@ include 'navbar.php';
                     <li class="drdn">
                     	<a href="#" class="dropdown-toggle" data-toggle="dropdown">Lab Details <span class="caret"></span></a>
                     	<ul class="dropdown-menu">
-                            <li  class="active" class="sel"><a href="infra1.php">Infra</a></li>
+                            <li  class="sel"><a href="infra1.php">Infra</a></li>
                             <li  class="sel"><a href="progwk.php">Programmer Login</a></li>
                         </ul>
                     </li>
@@ -97,6 +98,16 @@ include 'navbar.php';
 
 </script>
 <style>
+    .navbar-inverse .navbar-nav .open .dropdown-menu .navbar-inverse .navbar-nav .open .dropdown-menu {
+        background-color: #333333;
+        color:#ffffff;
+    }
+.drdn:hover .dropdown-menu {
+        display: block;
+    }
+.drdn hover .sel{
+    background-color: #3e8e41;
+}
 	#iFr2{
 		display: none;
 	}
@@ -190,7 +201,7 @@ echo "</div>
 	}
 </style>
 	<div class="wr">
-		<iframe name="if4" width="100%" style="position: absolute;" height="100%" id="iFr2" frameborder="0" scrolling="no"></iframe>
+		<iframe name="if4" width="100%" style="position: absolute;" height="100%" id="iFr2" frameborder="0" scrolling="yes"></iframe>
 	</div>
 </html>
 

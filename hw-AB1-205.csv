@@ -1,8 +1,12 @@
 "System Configuration",Brand,"No. of Systems"
 ,,
-ds,fcfffffffffffffffff,35
-d,null,0
-h,asdf,32
-q,b,12
+"Dell optiplex-380
+Intel core 2 Duo E7500@2.93Ghz,4.00 GB RAM, 320 GB HDD,OpticalMouse,Keyboard,
+LCD Monitor",Dell,164
+"HP Systems-280 G2 MT
+Intel core i5 @3.20Ghz,8 GB RAM,500 GB HDD, OpticalMouse,Keyboard ,HP LCD Monitor",HP,10
+"HCL
+Intel core 2 Duo E7500@2.93Ghz,4.00 GB RAM, 320 GB HDD,OpticalMouse,Keyboard,
+LCD Monitor",HCL,1
 ,,
-,"Total = ",79
+,"Total = ",175

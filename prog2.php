@@ -92,29 +92,29 @@ $conn=openCon();
 
 $a = "SELECT * FROM infrahw GROUP BY block,cno ORDER BY block,cno";
 
-$result=mysqli_query($conn,$a);
+$result1=mysqli_query($conn,$a);
 
 $j=0;
 while($j<=$i)
 	{
-		$row=mysqli_fetch_array($result); 
+		$row1=mysqli_fetch_array($result1); 
 		$j++;
 	}
 
-$ln=$row['cno'];
-$bn=$row['block'];
-$a = "SELECT * FROM infrahw WHERE block='$bn' and cno='$ln'";
+$ln1=$row1['cno'];
+$bn1=$row1['block'];
+$a = "SELECT * FROM infrahw WHERE block='$bn1' and cno='$ln1'";
 
 
-$file = fopen("hw-$bn-$ln.csv","w");
+$file1 = fopen("hw-$bn1-$ln1.csv","w");
 
 $k=0;
-$list=array();
-$list[$k++]= "System Configuration;Brand;No. of Systems";
-$list[$k++]= ";;";
+$list1=array();
+$list1[$k++]= "System Configuration;Brand;No. of Systems";
+$list1[$k++]= ";;";
 
 
-echo "<h2 class='pos'>".$row['block']." ".$row['cno']."</h2>";
+echo "<h2 class='pos'>".$row1['block']." ".$row1['cno']."</h2>";
 
 echo "<h3>Hardware Details (Click to edit)</h3>";
 
@@ -127,35 +127,94 @@ echo "<div class='container'>
 			<th>No. of Systems</th>
 		</tr>";
 
-$result=mysqli_query($conn,$a);
-while($row=mysqli_fetch_array($result))
+$result1=mysqli_query($conn,$a);
+while($row1=mysqli_fetch_array($result1))
 {
-	$i=$row['sno'];
-	echo "<tr><td><a onclick='updhw(1,$i)'>".$row['sysConfig']."</a></td><td><a onclick='updhw(2,$i)'>".$row['brand']."</a></td><td><a onclick='updhw(3,$i)'>".$row['num']."</a></td></tr>";
+	$i=$row1['sno'];
+	echo "<tr><td><a onclick='updhw(1,$i)'>".$row1['sysConfig']."</a></td><td><a onclick='updhw(2,$i)'>".$row1['brand']."</a></td><td><a onclick='updhw(3,$i)'>".$row1['num']."</a></td></tr>";
 	
-	$list[$k++]=$row['sysConfig'].";".$row['brand'].";".$row['num'];
+	$list1[$k++]=$row1['sysConfig'].";".$row1['brand'].";".$row1['num'];
 }
 
-$a = "SELECT SUM(num) FROM infrahw WHERE block='$bn' and cno='$ln'";
-$result=mysqli_query($conn,$a);
-$row=mysqli_fetch_array($result);
-echo "<tr><td class='total' colspan=2><b>Total = </b></td><td><b>".$row['SUM(num)']."</b></td></tr>";
+$a = "SELECT SUM(num) FROM infrahw WHERE block='$bn1' and cno='$ln1'";
+$result1=mysqli_query($conn,$a);
+$row1=mysqli_fetch_array($result1);
+echo "<tr><td class='total' colspan=2><b>Total = </b></td><td><b>".$row1['SUM(num)']."</b></td></tr>";
 
 echo "</table></div></div><br>";
 
-$list[$k++]=";;";
-$list[$k++]=";Total = ;".$row['SUM(num)'];
+$list1[$k++]=";;";
+$list1[$k++]=";Total = ;".$row1['SUM(num)'];
 
-foreach ($list as $line)
+foreach ($list1 as $line)
 {
-  fputcsv($file,explode(';',$line));
+  fputcsv($file1,explode(';',$line));
 }
-fclose($file);
+fclose($file1);
 
-echo "<center><button><a class='down' href='hw-$bn-$ln.csv' download>Download</a></button></center><br>";
+echo "<center><button><a class='down' href='hw-$bn1-$ln1.csv' download>Download</a></button></center><br>";
 
 $i=$_GET['i'];
 echo "<center><button onclick='addrow($i)'>Add</button></center><br><br>";
+
+$b = "SELECT * FROM infrasw GROUP BY block,cno ORDER BY block,cno";
+
+$result2=mysqli_query($conn,$b);
+
+$x=0;
+while($x<=$i)
+	{
+		$row2=mysqli_fetch_array($result2); 
+		$x++;
+	}
+
+$ln2=$row2['cno'];
+$bn2=$row2['block'];
+$b = "SELECT * FROM infrasw WHERE block='$bn2' and cno='$ln2'";
+
+
+$file2 = fopen("sw-$bn2-$ln2.csv","w");
+
+$y=0;
+$list2=array();
+$list2[$y++]= "Package;Brand;License";
+$list2[$y++]= ";;";
+
+
+echo "<h3>Software Details (Click to edit)</h3>";
+
+echo "<div class='container'>
+		<div class='table-responsive'>
+		<table border=2>
+		<tr>
+			<th>Package</th>
+			<th>Brand</th>
+			<th>License</th>
+		</tr>";
+
+$result2=mysqli_query($conn,$b);
+while($row2=mysqli_fetch_array($result2))
+{
+	$i=$row2['sno'];
+	echo "<tr><td><a onclick='updsw(1,$i)'>".$row2['package']."</a></td><td><a onclick='updsw(2,$i)'>".$row2['brand']."</a></td><td><a onclick='updsw(3,$i)'>".$row2['license']."</a></td></tr>";
+	
+	$list2[$y++]=$row2['package'].";".$row2['brand'].";".$row2['license'];
+}
+
+echo "</table></div></div><br>";
+
+$list2[$k++]=";;";
+
+foreach ($list2 as $line)
+{
+  fputcsv($file2,explode(';',$line));
+}
+fclose($file2);
+
+echo "<center><button><a class='down' href='sw-$bn2-$ln2.csv' download>Download</a></button></center><br>";
+
+$i=$_GET['i'];
+echo "<center><button onclick='addrowSW($i)'>Add</button></center><br><br>";
 
 ?>
 
@@ -190,5 +249,24 @@ echo "<center><button onclick='addrow($i)'>Add</button></center><br><br>";
   		}
 		if(x && y && z)
 			window.open("progadd.php?x="+x+"&y="+y+"&z="+z+"&i="+i+"&tab=infrahw","_self");
+	}
+	function updsw(n,i)
+	{
+		if(n==1)
+			x=prompt('Enter the updated package type');
+		else if(n==2)
+			x=prompt('Enter the updated brand');
+		else if(n==3)
+			x=prompt('Enter the updated license');
+		if(x)
+			window.open("progupdSW.php?n="+n+"&i="+i+"&x="+x+"&tab=infrasw","_self");
+	}
+	function addrowSW(i)
+	{
+		x=prompt('Enter the package type');
+		y=prompt('Enter the brand');
+		z=prompt('Enter the license');
+		if(x && y || z)
+			window.open("progaddSW.php?x="+x+"&y="+y+"&z="+z+"&i="+i+"&tab=infrasw","_self");
 	}
 </script>

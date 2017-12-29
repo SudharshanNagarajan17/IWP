@@ -1,0 +1,17 @@
+Package,Brand,License
+,,
+"Operating System","Linux Mint ","Open Source Software 73 Systems   "
+"Operating System","Windows 2003 server","Microsoft Campus Agreement -1 system"
+"Application		 				",Eclipse,
+Application,"R Studio ",
+Application,"VM Player,VMworkstation",
+"Complier/Interpretor		","g++,jdk1.7 Compiler",
+Complier/Interpretor,"IDLE Python2.7 and 3.4",
+,,
+"Tools and design","Yed Tool",
+"Tools and design",Umbrello,
+"Tools and design","Scilab ",
+"Tools and design","Scidavis ",
+"Tools and design",Wireshark,
+"Tools and design","CiscoPacket Tracer",
+"Internet Browser","Google chrome and Opera",
