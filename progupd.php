@@ -27,6 +27,6 @@ else if($n==3)
 $a = "UPDATE $t SET $ch='$x' WHERE sno=$i;";
 
 if(mysqli_query($conn,$a))
-	echo "<script>alert('Records updated successfully.');</script>";
+	echo "<script>alert('Records updated successfully.');parent.closeIFrame();</script>";
 
 ?>

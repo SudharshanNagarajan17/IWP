@@ -27,6 +27,6 @@ $t=(string)$_GET['tab'];
 $a = "INSERT INTO $t(block,cno,package,brand,license) VALUES ('$bn','$ln','$x','$y','$z')";
 
 if(mysqli_query($conn,$a))
-	echo "<script>alert('Record added successfully.');</script>";
+	echo "<script>alert('Record added successfully.');parent.closeIFrame();</script>";
 
 ?>

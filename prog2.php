@@ -232,7 +232,9 @@ echo "<center><button onclick='addrowSW($i)'>Add</button></center><br><br>";
     			return false;
   			}
   		}
-		if(x)
+  		if(x.indexOf(";")>-1)
+  			alert("Character ; is invalid");
+		else if(x)
 			window.open("progupd.php?n="+n+"&i="+i+"&x="+x+"&tab=infrahw","_self");
 	}
 	function addrow(i)
@@ -245,7 +247,9 @@ echo "<center><button onclick='addrowSW($i)'>Add</button></center><br><br>";
     		alert("Invalid Input");
     		return false;
   		}
-		if(x && y && z)
+  		if(x.indexOf(";")>-1 || y.indexOf(";")>-1 || z.indexOf(";")>-1)
+  			alert("Character ; is invalid");
+		else if(x && y && z)
 			window.open("progadd.php?x="+x+"&y="+y+"&z="+z+"&i="+i+"&tab=infrahw","_self");
 	}
 	function updsw(n,i)
@@ -256,7 +260,9 @@ echo "<center><button onclick='addrowSW($i)'>Add</button></center><br><br>";
 			x=prompt('Enter the updated brand');
 		else if(n==3)
 			x=prompt('Enter the updated license');
-		if(x)
+		if(x.indexOf(";")>-1)
+  			alert("Character ; is invalid");
+		else if(x)
 			window.open("progupdSW.php?n="+n+"&i="+i+"&x="+x+"&tab=infrasw","_self");
 	}
 	function addrowSW(i)
@@ -264,7 +270,9 @@ echo "<center><button onclick='addrowSW($i)'>Add</button></center><br><br>";
 		x=prompt('Enter the package type');
 		y=prompt('Enter the brand');
 		z=prompt('Enter the license');
-		if(x && y || z)
+		if(x.indexOf(";")>-1 || y.indexOf(";")>-1 || z.indexOf(";")>-1)
+  			alert("Character ; is invalid");
+		else if(x && y)
 			window.open("progaddSW.php?x="+x+"&y="+y+"&z="+z+"&i="+i+"&tab=infrasw","_self");
 	}
 	function delhw(i)

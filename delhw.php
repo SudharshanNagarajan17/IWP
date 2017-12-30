@@ -5,5 +5,5 @@ include "link.php";
 $conn=openCon();
 $a = "DELETE FROM infrahw WHERE sno='$i';";
 mysqli_query($conn,$a);
-echo "<script>parent.closeIFrame();</script>";
+echo "<script>alert('Record deleted successfully.');parent.closeIFrame();</script>";
 ?>

@@ -5,7 +5,7 @@ include "link.php";
 $conn=openCon();
 $a = "DELETE FROM workshop WHERE sno=".$i.";";
 mysqli_query($conn,$a);
-echo "<script>window.open('admwk.php','_self')</script>";
+echo "<script>alert('Record deleted successfully.');window.open('admwk.php','_self')</script>";
 ?>
 
 <!DOCTYPE html>
