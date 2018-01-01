@@ -109,7 +109,7 @@ label{
 }
 .hovlog:hover{
     background-color: #ff8000;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 </style>
 <body onload="radioreset()" onreset="radioreset()">
